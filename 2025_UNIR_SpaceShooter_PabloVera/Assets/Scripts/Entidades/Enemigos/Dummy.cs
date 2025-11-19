@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class Dummy : Entidad
+public class Dummy : Enemigo
 {
-    public AudioClip muerte;
-    public override void Die()
+    public Transform cannon;
+    public override void Shoot()
     {
-        Debug.Log("HE MUELTO");
-        SoundMannager.Instance.PlaySFX(muerte);
+        Bullet bull = bulletPool.SacarDeLaPool();
+        bull.gameObject.transform.SetParent(escenario);
+        bull.Init(cannon.up, cannon);
+        bull.gameObject.SetActive(true);
+        SoundMannager.Instance.PlaySFX(enemyData.SFX_disparo);
     }
 }

@@ -2,21 +2,23 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float ttl, speed;
-    [SerializeField] private int dmg;
-    [SerializeField] private Vector2 dir;
-    private float currentTtl;
-    public Transform initPos;
-    private BulletPool pool;
-    private Rigidbody2D rb2d;
+    [SerializeField] protected float ttl, speed;
+    [SerializeField] protected int dmg;
+    protected Vector2 dir;
+    protected float currentTtl;
+    protected Transform initPos;
+    protected BulletPool pool;
+    protected Rigidbody2D rb2d;
 
     public void SetBulletPool(BulletPool Bpool) { pool = Bpool; }
 
-    private void Start()
+    public void Init(Vector2 aim, Transform initPosition)
     {
+        initPos = initPosition;
         transform.position = initPos.position;
         currentTtl = ttl;
         rb2d = GetComponent<Rigidbody2D>();
+        dir = aim;
     }
 
     private void FixedUpdate()
@@ -37,7 +39,7 @@ public class Bullet : MonoBehaviour
         pool.MeterEnLaPool(this);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision != null)
         {

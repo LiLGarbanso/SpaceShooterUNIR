@@ -4,5 +4,5 @@ using UnityEngine;
 public class EntityData : ScriptableObject
 {
     public int vida;
-    public AudioClip recibirDMG, muerte;
+    public AudioClip SFX_recibirDMG, SFX_muerte;
 }

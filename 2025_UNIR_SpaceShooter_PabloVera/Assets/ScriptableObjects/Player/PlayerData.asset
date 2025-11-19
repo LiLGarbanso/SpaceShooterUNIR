@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d035d9e8df50ea4b9dceb0a26193bd7, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: Assembly-CSharp::PlayerData
-  disparo: {fileID: 8300000, guid: 92524e5be79dde0418fa263ca490d5ec, type: 3}
-  recibirDMG: {fileID: 8300000, guid: b1fb6f8831969cc418eb09bc95a9b634, type: 3}
-  muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
+  SFX_disparo: {fileID: 8300000, guid: 92524e5be79dde0418fa263ca490d5ec, type: 3}
+  SFX_recibirDMG: {fileID: 8300000, guid: d64243527d147d4439133d9e13673c89, type: 3}
+  SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
+  vida: 3
+  dmg: 1
+  moveSpeed: 0
+  shootCadency: 0.2

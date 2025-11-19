@@ -6,10 +6,10 @@ using UnityEngine;
  */
 public abstract class Entidad : MonoBehaviour
 {
-    private int currentVida;
+    protected int currentVida;
     public EntityData entityData;
 
-    private void Start()
+    public virtual void Start()
     {
         currentVida = entityData.vida;
     }
@@ -23,7 +23,7 @@ public abstract class Entidad : MonoBehaviour
         }
         else
         {
-            SoundMannager.Instance.PlaySFX(entityData.recibirDMG);
+            SoundMannager.Instance.PlaySFX(entityData.SFX_recibirDMG);
         }
     }
 
