@@ -4,12 +4,13 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
-    [SerializeField]private float movSpeed;
-    private Vector2 dir;
+    [SerializeField]private float aceleration, maxSpeed, drag;
+    private Vector2 dir, currentVelocity;
 
     private void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        currentVelocity = Vector2.zero;
     }
 
     public void Moverse(InputAction.CallbackContext context)
@@ -19,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2d.linearVelocity = dir.normalized * movSpeed;
+        currentVelocity += dir * aceleration * Time.deltaTime;
+        currentVelocity = Vector2.ClampMagnitude(currentVelocity, maxSpeed);
+        rb2d.linearVelocity = currentVelocity * Time.deltaTime;
+        currentVelocity *= drag;
+
+        //rb2d.linearVelocity = dir.normalized * speed*Time.deltaTime;
     }
 }

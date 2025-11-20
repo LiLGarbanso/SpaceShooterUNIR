@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\entidades\\enemigos\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entidades\\enemigos\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,32 +27,16 @@
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\entidades\\enemigos\\enemydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bulletpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scriptableobjects\\player\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptableobjects\\player\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\entidades\\enemigos\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entidades\\enemigos\\enemigo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\entidades\\entidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entidades\\entidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\entidades\\enemigos\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EnemyBullet.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Entidades\\Enemigos\\EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entidades\\Enemigos\\EnemyBullet.cs",
@@ -71,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
@@ -84,20 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerData.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\ScriptableObjects\\Player\\PlayerData.cs",
-              "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\Player\\PlayerData.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\ScriptableObjects\\Player\\PlayerData.cs",
-              "RelativeToolTip": "Assets\\ScriptableObjects\\Player\\PlayerData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T22:42:34.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Dummy.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Entidades\\Enemigos\\Dummy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entidades\\Enemigos\\Dummy.cs",
@@ -109,20 +92,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Enemigo.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Entidades\\Enemigos\\Enemigo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entidades\\Enemigos\\Enemigo.cs",
               "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Entidades\\Enemigos\\Enemigo.cs",
               "RelativeToolTip": "Assets\\Scripts\\Entidades\\Enemigos\\Enemigo.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA9wDEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T21:08:07.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "EnemyData.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\ScriptableObjects\\Entidades\\Enemigos\\EnemyData.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptableObjects\\Entidades\\Enemigos\\EnemyData.cs",
@@ -148,33 +131,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PlayerActions.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerActions.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerActions.cs",
               "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerActions.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerActions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T17:11:13.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BulletPool.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\BulletPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\BulletPool.cs",
               "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\BulletPool.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\BulletPool.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T16:59:47.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Bullet.cs",
@@ -187,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
