@@ -16,7 +16,7 @@ public abstract class Enemigo : Entidad
     {
         currentVida = enemyData.vida;
         currentTarget = 0;
-        currentShootTime = enemyData.attackSpeed + Random.Range(0f, delayShoot);
+        currentShootTime = enemyData.attackSpeed + Random.Range(-delayShoot, delayShoot);
         moveCoroutine = StartCoroutine(Mover());
     }
     private void Update()

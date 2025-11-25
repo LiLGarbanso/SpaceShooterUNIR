@@ -15,7 +15,12 @@ MonoBehaviour:
   SFX_disparo: {fileID: 8300000, guid: 92524e5be79dde0418fa263ca490d5ec, type: 3}
   SFX_recibirDMG: {fileID: 8300000, guid: d64243527d147d4439133d9e13673c89, type: 3}
   SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
+  SFX_escudo: {fileID: 8300000, guid: db4b2fda9083cdb4a9b64b3b1d839b9b, type: 3}
+  SFX_DetenerProyectil: {fileID: 8300000, guid: ceaa258b3f9590546a72bd6aac573cbd, type: 3}
+  SFX_CooldownEscudo: {fileID: 8300000, guid: 0e59e870b3bff564a8fbed383999e1e2, type: 3}
   vida: 3
   dmg: 1
   moveSpeed: 0
   shootCadency: 0.2
+  shieldTime: 1
+  shieldCooldown: 3
