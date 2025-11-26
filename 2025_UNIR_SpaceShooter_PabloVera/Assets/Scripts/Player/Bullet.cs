@@ -46,8 +46,8 @@ public class Bullet : MonoBehaviour
             if (collision.gameObject.TryGetComponent<Entidad>(out var target))
             {
                 target.TakeDMG(dmg);
+                Desactivar();
             }
-            Desactivar();
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)

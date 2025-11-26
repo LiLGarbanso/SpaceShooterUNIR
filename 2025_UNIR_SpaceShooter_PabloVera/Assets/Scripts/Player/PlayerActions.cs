@@ -31,7 +31,7 @@ public class PlayerActions : MonoBehaviour
     }
     public void Disparar(InputAction.CallbackContext context)
     {
-        if (context.started && canShoot)
+        if (context.performed && canShoot)
         {
             canShoot = false;
             currentShootCadency = 0;

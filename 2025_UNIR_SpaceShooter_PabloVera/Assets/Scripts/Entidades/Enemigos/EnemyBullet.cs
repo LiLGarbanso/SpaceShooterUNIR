@@ -11,6 +11,11 @@ public class EnemyBullet : Bullet
                 target.TakeDMG(dmg);
                 Desactivar();
             }
+            else if(collision.gameObject.TryGetComponent<CruceroEstelar>(out var target2))
+            {
+                target2.TakeDMG(dmg);
+                Desactivar();
+            }
         }
     }
 }

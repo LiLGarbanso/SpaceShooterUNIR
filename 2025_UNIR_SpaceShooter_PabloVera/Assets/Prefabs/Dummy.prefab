@@ -5041,11 +5041,7 @@ MonoBehaviour:
   entityData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   bulletPool: {fileID: 3598576949738517755}
-  targetsPosMovement:
-  - {x: -3, y: 0}
-  - {x: -2, y: -1}
-  - {x: 2, y: 1}
-  - {x: 4, y: 0}
+  targetsPosMovement: []
   escenario: {fileID: 0}
   cannon: {fileID: 2603121467397961789}
 --- !u!114 &3598576949738517755

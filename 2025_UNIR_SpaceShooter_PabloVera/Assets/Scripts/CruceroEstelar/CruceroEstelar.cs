@@ -11,6 +11,7 @@ public class CruceroEstelar : MonoBehaviour
     private void Start()
     {
         currentLaserCooldown = cruceroData.laserCooldown;
+        currentHP = cruceroData.HP;
     }
 
     public void LaserCannon(InputAction.CallbackContext context)
@@ -39,7 +40,7 @@ public class CruceroEstelar : MonoBehaviour
         }
         else
         {
-            //SoundMannager.Instance.PlaySFX(playerData.SFX_recibirDMG);
+            SoundMannager.Instance.PlaySFX(cruceroData.SFX_recibirDMG);
         }
     }
 

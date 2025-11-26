@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfde2aa54b311de478c5785473a08ba6, type: 3}
   m_Name: CruceroData
   m_EditorClassIdentifier: Assembly-CSharp::CruceroData
-  SFX_recibirDMG: {fileID: 0}
-  SFX_DispararCannonLaser: {fileID: 0}
-  SFX_RecuperarHP: {fileID: 0}
+  SFX_recibirDMG: {fileID: 8300000, guid: 9a422c8d770598a4bb446f4f5267f1b9, type: 3}
+  SFX_DispararCannonLaser: {fileID: 8300000, guid: 7ede79aca494ca44996040d9f0facbd8, type: 3}
+  SFX_RecuperarHP: {fileID: 8300000, guid: 02b0e70088ce2e4459ab30d4906c8aa2, type: 3}
   HP: 100
   navesIniciales: 3
   laserCooldown: 60
