@@ -21,6 +21,6 @@ MonoBehaviour:
   vida: 3
   dmg: 1
   moveSpeed: 0
-  shootCadency: 0.2
+  shootCadency: 0.05
   shieldTime: 1
   shieldCooldown: 3

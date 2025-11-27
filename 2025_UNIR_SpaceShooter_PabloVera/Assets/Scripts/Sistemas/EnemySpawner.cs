@@ -5,12 +5,19 @@ public class EnemySpawner : MonoBehaviour
 {
     public Collider2D spawnArea, z1, z2, z3;
     public Enemigo prefabE1, prefabE2, prefabE3;
-    public Transform escenario;
+    public Transform escenario, player;
     public List<int> Ronda1, Ronda2, Ronda3;
+    private int currentEnemmies;
 
     private void OnEnable()
     {
         EventBus.OnNextRound += Spawnear;
+        EventBus.OnEnemigoMuerto += EnemigoEliminado;
+    }
+
+    private void Start()
+    {
+        currentEnemmies = 0;
     }
 
     public void Spawnear(int ronda)
@@ -31,15 +38,16 @@ public class EnemySpawner : MonoBehaviour
                 currentRonda = Ronda1;
                 break;
         }
-
+        currentEnemmies = 0;
         for(int i = 0; i < currentRonda.Count; i++)
         {
-            SpawnearEnemigoTipo(i, currentRonda[i]);
+            SpawnearEnemigoTipo(i+1, currentRonda[i]);
         }
     }
 
     private void SpawnearEnemigoTipo(int tipo, int cantidad)
     {
+        if (cantidad == 0) return;
         switch (tipo)
         {
             case 1:
@@ -63,6 +71,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Enemigo enemy = Instantiate(prefab, spawnArea.bounds.center, Quaternion.identity, escenario);
             enemy.escenario = escenario;
+            enemy.player = player;
             Vector2 spawnPoint = new Vector2(Random.Range(spawnArea.bounds.min.x, spawnArea.bounds.max.x), Random.Range(spawnArea.bounds.min.y, spawnArea.bounds.max.y));
             enemy.spawnPos = spawnPoint;
 
@@ -71,11 +80,22 @@ public class EnemySpawner : MonoBehaviour
                 Vector2 ponit = new Vector2(Random.Range(zona.bounds.min.x, zona.bounds.max.x), Random.Range(zona.bounds.min.y, zona.bounds.max.y));
                 enemy.targetsPosMovement.Add(ponit);
             }
+            currentEnemmies++;
+        }
+    }
+
+    public void EnemigoEliminado(int score)
+    {
+        currentEnemmies--;
+        if(currentEnemmies <= 0)
+        {
+            EventBus.FinalizarRonda();
         }
     }
 
     private void OnDisable()
     {
         EventBus.OnNextRound -= Spawnear;
+        EventBus.OnEnemigoMuerto -= EnemigoEliminado;
     }
 }

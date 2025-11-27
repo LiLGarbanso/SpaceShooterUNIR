@@ -34,8 +34,8 @@ public static class EventBus
     //Con parámetros o sin (puede ser cualquier otra cosa que GameObject)
     //public static event Action OnEvento;
     //public static event Action<parametro> OnEventoParametro;
-    public static event Action OnEmpezarPartida;
-    public static event Action<int> OnNextRound;
+    public static event Action OnEmpezarPartida, OnRondaFinalizada, OnGameOver;
+    public static event Action<int> OnNextRound, OnEnemigoMuerto;
 
     //----------Funciones para invocar los eventos----------//
     //Se llama a estas funciones, no a los eventos directamente,
@@ -45,5 +45,9 @@ public static class EventBus
     //public static void LlamarEvento() => OnEvento?.Invoke();
     //public static void LlamarEventoParametro(Parametro param) => OnEvento?.Invoke();
     public static void EmpezarPartida() => OnEmpezarPartida?.Invoke();
+    public static void FinalizarRonda() => OnRondaFinalizada?.Invoke();
+    public static void EnemigoMuerto(int score) => OnEnemigoMuerto?.Invoke(score);
+    public static void GameOver() => OnGameOver?.Invoke();
     public static void NextRound(int ronda) => OnNextRound?.Invoke(ronda);
+
 }

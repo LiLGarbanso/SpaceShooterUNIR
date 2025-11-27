@@ -43,9 +43,14 @@ public class Bullet : MonoBehaviour
     {
         if (collision != null)
         {
-            if (collision.gameObject.TryGetComponent<Entidad>(out var target))
+            if (collision.gameObject.TryGetComponent<Enemigo>(out var target))
             {
                 target.TakeDMG(dmg);
+                Desactivar();
+            }
+            else if(collision.gameObject.TryGetComponent<Mejora>(out var mejora))
+            {
+                mejora.TrySeleccionarMejora();
                 Desactivar();
             }
         }

@@ -6,26 +6,26 @@ using UnityEngine;
  */
 public abstract class Entidad : MonoBehaviour
 {
-    protected int currentVida;
+    
     public EntityData entityData;
 
     public virtual void Start()
     {
-        currentVida = entityData.vida;
+        //currentVida = entityData.vida;
     }
 
-    public void TakeDMG(int dmg)
-    {
-        currentVida -= dmg;
-        if (currentVida <= 0)
-        {
-            Die();
-        }
-        else
-        {
-            SoundMannager.Instance.PlaySFX(entityData.SFX_recibirDMG);
-        }
-    }
+    //public void TakeDMG(int dmg)
+    //{
+    //    currentVida -= dmg;
+    //    if (currentVida <= 0)
+    //    {
+    //        Die();
+    //    }
+    //    else
+    //    {
+    //        SoundMannager.Instance.PlaySFX(entityData.SFX_recibirDMG);
+    //    }
+    //}
 
     public abstract void Die();
 }

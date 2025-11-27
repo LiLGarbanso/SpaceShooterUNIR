@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d12d0fa468480b44b67bf4b83af75a8, type: 3}
-  m_Name: Dummy
+  m_Name: Snniper
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  vida: 3
-  dmg: 1
-  movementPoints: 4
-  score: 5
-  attackSpeed: 3
-  movementSpeed: 2
+  vida: 1
+  dmg: 2
+  movementPoints: 2
+  score: 10
+  attackSpeed: 5
+  movementSpeed: 1
   SFX_disparo: {fileID: 8300000, guid: 4bc8fb5e3886a7e4396b17ff8aaf8557, type: 3}
-  SFX_recibirDMG: {fileID: 8300000, guid: b1fb6f8831969cc418eb09bc95a9b634, type: 3}
+  SFX_recibirDMG: {fileID: 8300000, guid: d64243527d147d4439133d9e13673c89, type: 3}
   SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}

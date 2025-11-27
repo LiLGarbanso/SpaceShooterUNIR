@@ -4924,7 +4924,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2603121467397961789}
@@ -5038,11 +5038,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeebe0d6d332d6344b16d5adf4371f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
-  entityData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   bulletPool: {fileID: 3598576949738517755}
   targetsPosMovement: []
+  spawnPos: {x: 0, y: 0}
   escenario: {fileID: 0}
+  player: {fileID: 0}
+  particleSys: {fileID: 6113273074692946843}
   cannon: {fileID: 2603121467397961789}
 --- !u!114 &3598576949738517755
 MonoBehaviour:

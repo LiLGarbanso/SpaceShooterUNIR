@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemigo : Entidad
+public abstract class Enemigo : MonoBehaviour
 {
     public EnemyData enemyData;
     public BulletPool bulletPool;
@@ -10,16 +10,23 @@ public abstract class Enemigo : Entidad
     public Vector2 spawnPos;
     private float umbralDistancia = 0.1f, currentShootTime, delayShoot = 2f;
     private int currentTarget;
-    private Coroutine moveCoroutine;
-    public Transform escenario;
+    private Coroutine moveCoroutine, dieCoroutine;
+    public Transform escenario, player;
     private bool canShoot;
+    protected int currentVida;
+    public ParticleSystem particleSys;
+    private SpriteRenderer sprRend;
+    private Collider2D col;
 
-    public override void Start()
+    public void Start()
     {
+        sprRend = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
         currentVida = enemyData.vida;
         currentTarget = 0;
         currentShootTime = enemyData.attackSpeed + Random.Range(-delayShoot, delayShoot);
         canShoot = false;
+        dieCoroutine = null;
         StartCoroutine(MoveSpawn());
     }
     private void Update()
@@ -50,12 +57,37 @@ public abstract class Enemigo : Entidad
         moveCoroutine = StartCoroutine(Mover());
     }
 
-    public override void Die()
+    public void TakeDMG(int dmg)
     {
-        Debug.Log("HE MUELTO");
-        SoundMannager.Instance.PlaySFX(enemyData.SFX_muerte);
-        gameObject.SetActive(false);
+        currentVida -= dmg;
+        if (currentVida <= 0)
+        {
+            if(dieCoroutine == null)
+            {
+                StopAllCoroutines();
+                dieCoroutine = StartCoroutine(Die());
+            }
+        }
+        else
+        {
+            SoundMannager.Instance.PlaySFX(enemyData.SFX_recibirDMG);
+        }
     }
+
+    IEnumerator Die()
+    {
+        sprRend.enabled = false;
+        canShoot = false;
+        col.enabled = false;
+        SoundMannager.Instance.PlaySFX(enemyData.SFX_muerte);
+        EventBus.EnemigoMuerto(enemyData.score);
+        particleSys.Play();
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
+        yield return null;
+    }
+
+
 
     public void MoveToTargetPosition(Vector2 target)
     {
