@@ -114,6 +114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6bf246632ae474ba3f46ce98f3453c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBullet
-  ttl: 10
+  ttl: 20
   speed: 2
   dmg: 1

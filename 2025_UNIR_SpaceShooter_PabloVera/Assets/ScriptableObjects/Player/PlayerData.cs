@@ -3,7 +3,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerData", menuName = "Scriptable Objects/PlayerData")]
 public class PlayerData : ScriptableObject
 {
-    public AudioClip SFX_disparo, SFX_recibirDMG, SFX_muerte, SFX_escudo, SFX_DetenerProyectil, SFX_CooldownEscudo;
-    public int vida, dmg;
-    public float moveSpeed, shootCadency, shieldTime, shieldCooldown;
+    [Header("SFX")]
+    public AudioClip SFX_disparo;
+    public AudioClip SFX_recibirDMG, SFX_muerte, SFX_escudo, SFX_DetenerProyectil, SFX_CooldownEscudo;
+
+    [Header("Stats")]
+    public int vida;
+    public int dmg;
+    public float maxSpeed, acceleration, speedDrag, shootCadency, shieldTime, shieldCooldown;
 }

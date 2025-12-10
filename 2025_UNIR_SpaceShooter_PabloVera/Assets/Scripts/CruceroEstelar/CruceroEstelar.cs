@@ -10,13 +10,13 @@ public class CruceroEstelar : MonoBehaviour
     public CruceroData cruceroData;
     public RectTransform uiHpCrucero;
     public Image hpBar;
-    private float totalWidth;
+    private float totalHeight;
 
     private void Start()
     {
         currentLaserCooldown = cruceroData.laserCooldown;
         currentHP = cruceroData.HP;
-        totalWidth = uiHpCrucero.rect.width;
+        totalHeight = uiHpCrucero.rect.height;
     }
 
     public void LaserCannon(InputAction.CallbackContext context)
@@ -70,7 +70,7 @@ public class CruceroEstelar : MonoBehaviour
 
     public void UpdateUiCrucero()
     {
-        uiHpCrucero.sizeDelta = new Vector2(Mathf.Lerp(0, totalWidth, (float)currentHP / cruceroData.HP), uiHpCrucero.sizeDelta.y);
+        uiHpCrucero.sizeDelta = new Vector2(uiHpCrucero.sizeDelta.x, Mathf.Lerp(0, totalHeight, (float)currentHP / cruceroData.HP));
     }
 
     private void Die()

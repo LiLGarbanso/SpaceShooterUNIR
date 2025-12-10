@@ -8,6 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public Transform escenario, player;
     public List<int> Ronda1, Ronda2, Ronda3;
     private int currentEnemmies;
+    public EnemyPool dummyPool;
 
     private void OnEnable()
     {
@@ -23,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
     public void Spawnear(int ronda)
     {
         List<int> currentRonda = new List<int>();
-        switch(ronda)
+        switch (ronda)
         {
             case 1:
                 currentRonda = Ronda1;
@@ -39,9 +40,9 @@ public class EnemySpawner : MonoBehaviour
                 break;
         }
         currentEnemmies = 0;
-        for(int i = 0; i < currentRonda.Count; i++)
+        for (int i = 0; i < currentRonda.Count; i++)
         {
-            SpawnearEnemigoTipo(i+1, currentRonda[i]);
+            SpawnearEnemigoTipo(i + 1, currentRonda[i]);
         }
     }
 
@@ -69,17 +70,21 @@ public class EnemySpawner : MonoBehaviour
     {
         for(int i = 0; i < cantidad; i++)
         {
-            Enemigo enemy = Instantiate(prefab, spawnArea.bounds.center, Quaternion.identity, escenario);
+            //Enemigo enemy = Instantiate(prefab, spawnArea.bounds.center, Quaternion.identity, escenario);
+            Enemigo enemy = dummyPool.SacarDeLaPool();
+            enemy.gameObject.SetActive(true);
             enemy.escenario = escenario;
-            enemy.player = player;
+            enemy.transform.SetParent(escenario);
+            //enemy.player = player;
             Vector2 spawnPoint = new Vector2(Random.Range(spawnArea.bounds.min.x, spawnArea.bounds.max.x), Random.Range(spawnArea.bounds.min.y, spawnArea.bounds.max.y));
-            enemy.spawnPos = spawnPoint;
+            //enemy.spawnPos = spawnPoint;
 
-            for (int j = 0; j < enemy.enemyData.movementPoints; j++)
-            {
-                Vector2 ponit = new Vector2(Random.Range(zona.bounds.min.x, zona.bounds.max.x), Random.Range(zona.bounds.min.y, zona.bounds.max.y));
-                enemy.targetsPosMovement.Add(ponit);
-            }
+            //for (int j = 0; j < enemy.enemyData.movementPoints; j++)
+            //{
+            //    Vector2 ponit = new Vector2(Random.Range(zona.bounds.min.x, zona.bounds.max.x), Random.Range(zona.bounds.min.y, zona.bounds.max.y));
+            //    //enemy.targetsPosMovement.Add(ponit);
+            //}
+            enemy.Init(spawnPoint);
             currentEnemmies++;
         }
     }

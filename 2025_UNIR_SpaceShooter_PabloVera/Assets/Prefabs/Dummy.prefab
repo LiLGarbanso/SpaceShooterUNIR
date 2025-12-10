@@ -5040,11 +5040,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dummy
   enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   bulletPool: {fileID: 3598576949738517755}
-  targetsPosMovement: []
-  spawnPos: {x: 0, y: 0}
   escenario: {fileID: 0}
-  player: {fileID: 0}
   particleSys: {fileID: 6113273074692946843}
+  sprRend: {fileID: 4655450335762406903}
+  col: {fileID: 4672495905877786059}
+  escenarioMask:
+    serializedVersion: 2
+    m_Bits: 64
   cannon: {fileID: 2603121467397961789}
 --- !u!114 &3598576949738517755
 MonoBehaviour:

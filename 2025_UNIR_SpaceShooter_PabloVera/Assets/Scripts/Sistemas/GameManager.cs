@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public int numRondas;
     private int currentRound, currentPuntos;
-    public TextMeshProUGUI rondaTxt, puntosTxt;
+    public Text rondaTxt, puntosTxt;
     public GameObject uiDerrota;
     private Coroutine crtDerrota;
 
@@ -55,10 +55,10 @@ public class GameManager : MonoBehaviour
     public void SiguienteRonda()
     {
         currentRound++;
-        rondaTxt.text = "Ronda " + currentRound.ToString();
+        //rondaTxt.text = "Ronda " + currentRound.ToString();
         if (currentRound > numRondas)
         {
-            rondaTxt.text = "NIVEL COMPLETADO";
+            //rondaTxt.text = "NIVEL COMPLETADO";
             return;
         }
         EventBus.NextRound(currentRound);

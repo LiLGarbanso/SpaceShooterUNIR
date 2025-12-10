@@ -20,7 +20,9 @@ MonoBehaviour:
   SFX_CooldownEscudo: {fileID: 8300000, guid: 0e59e870b3bff564a8fbed383999e1e2, type: 3}
   vida: 3
   dmg: 1
-  moveSpeed: 0
+  maxSpeed: 400
+  acceleration: 2000
+  speedDrag: 0.95
   shootCadency: 0.05
   shieldTime: 1
   shieldCooldown: 3

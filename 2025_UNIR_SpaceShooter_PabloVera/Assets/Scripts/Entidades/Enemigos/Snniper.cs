@@ -3,8 +3,14 @@ using UnityEngine;
 
 public class Snniper : Enemigo
 {
-    public Transform cannon;
+    public Transform cannon, player;
     public LineRenderer lineRenderer;
+
+    public override void Movement()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public override void Shoot()
     {
         StartCoroutine(SnniperShoot());
