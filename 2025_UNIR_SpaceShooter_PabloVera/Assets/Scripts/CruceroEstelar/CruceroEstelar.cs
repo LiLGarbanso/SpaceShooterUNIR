@@ -49,15 +49,6 @@ public class CruceroEstelar : MonoBehaviour
         currentHP -= dmg;
         UpdateUiCrucero();
 
-        if(currentHP < (cruceroData.HP/ 4)*3)
-            hpBar.color = Color.yellow;
-
-        if (currentHP < cruceroData.HP / 2)
-            hpBar.color = Color.orange;
-
-        if (currentHP < cruceroData.HP / 4)
-            hpBar.color = Color.red;
-
         if (currentHP <= 0)
         {
             Die();
@@ -71,6 +62,17 @@ public class CruceroEstelar : MonoBehaviour
     public void UpdateUiCrucero()
     {
         uiHpCrucero.sizeDelta = new Vector2(uiHpCrucero.sizeDelta.x, Mathf.Lerp(0, totalHeight, (float)currentHP / cruceroData.HP));
+
+        hpBar.color = Color.purple;
+
+        if (currentHP < (cruceroData.HP / 4) * 3)
+            hpBar.color = Color.yellow;
+
+        if (currentHP < cruceroData.HP / 2)
+            hpBar.color = Color.orange;
+
+        if (currentHP < cruceroData.HP / 4)
+            hpBar.color = Color.red;
     }
 
     private void Die()

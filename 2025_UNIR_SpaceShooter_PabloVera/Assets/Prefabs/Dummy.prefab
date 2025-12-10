@@ -4924,7 +4924,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2603121467397961789}
@@ -4979,7 +4979,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2901014834372244158, guid: 660b968da87799b42ae8379df4d4b10a, type: 3}
+  m_Sprite: {fileID: -5123545431025474169, guid: a620b822bdf67914faf3139bd6220998, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5025,7 +5025,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Radius: 1.18
 --- !u!114 &2816035112070285555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5041,6 +5041,7 @@ MonoBehaviour:
   enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
   bulletPool: {fileID: 3598576949738517755}
   escenario: {fileID: 0}
+  palyer: {fileID: 0}
   particleSys: {fileID: 6113273074692946843}
   sprRend: {fileID: 4655450335762406903}
   col: {fileID: 4672495905877786059}

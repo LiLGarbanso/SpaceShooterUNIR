@@ -103,8 +103,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 0.44705883}
-      key1: {r: 1, g: 0, b: 0, a: 0.46666667}
+      key0: {r: 0.13068306, g: 1, b: 0, a: 0.44705883}
+      key1: {r: 0.12941177, g: 1, b: 0, a: 0.46666667}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -198,6 +198,14 @@ PrefabInstance:
       propertyPath: prefabBullet
       value: 
       objectReference: {fileID: 8568108055056278518, guid: ffc98d808bc4a7a4089d2811e408099e, type: 3}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1831932300119153671, guid: a620b822bdf67914faf3139bd6220998, type: 3}
+    - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Radius
+      value: 0.87
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
     m_RemovedGameObjects: []
@@ -229,13 +237,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Snniper
   enemyData: {fileID: 11400000, guid: 85a3c41cb3969824d88a90f53383cac1, type: 2}
   bulletPool: {fileID: 3809741165602414552}
-  targetsPosMovement: []
-  spawnPos: {x: 0, y: 0}
   escenario: {fileID: 0}
   player: {fileID: 0}
   particleSys: {fileID: 5906726771624038584}
+  sprRend: {fileID: 5022963457623848660}
+  col: {fileID: 5041313082898863848}
+  escenarioMask:
+    serializedVersion: 2
+    m_Bits: 64
   cannon: {fileID: 2381974165193904926}
   lineRenderer: {fileID: 6922828810301963825}
+  aimTime: 2
 --- !u!4 &2381974165193904926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2603121467397961789, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
@@ -257,6 +269,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c263834653d18bc43b8fd0eb9e02556e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BulletPool
+--- !u!212 &5022963457623848660 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 373338953362221859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &5041313082898863848 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 373338953362221859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &5906726771624038584 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}

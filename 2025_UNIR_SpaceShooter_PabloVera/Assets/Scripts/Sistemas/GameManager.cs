@@ -8,9 +8,10 @@ public class GameManager : MonoBehaviour
 {
     public int numRondas;
     private int currentRound, currentPuntos;
-    public Text rondaTxt, puntosTxt;
+    public Text puntosTxt;
     public GameObject uiDerrota;
     private Coroutine crtDerrota;
+    public RoundMannager roundMannager;
 
     private void OnEnable()
     {
@@ -25,7 +26,8 @@ public class GameManager : MonoBehaviour
         uiDerrota.SetActive(false);
         EventBus.EmpezarPartida();
         currentRound = 0;
-        SiguienteRonda();
+        //SiguienteRonda();
+        roundMannager.StartRound();
     }
 
     public void SumarPuntos(int puntos)

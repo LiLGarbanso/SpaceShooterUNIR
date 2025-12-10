@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d12d0fa468480b44b67bf4b83af75a8, type: 3}
   m_Name: Snniper
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  vida: 1
-  dmg: 2
-  movementPoints: 2
-  score: 10
-  attackSpeed: 5
-  movementSpeed: 1
   SFX_disparo: {fileID: 8300000, guid: 4bc8fb5e3886a7e4396b17ff8aaf8557, type: 3}
   SFX_recibirDMG: {fileID: 8300000, guid: d64243527d147d4439133d9e13673c89, type: 3}
   SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
+  vida: 2
+  dmg: 3
+  movementPoints: 2
+  score: 25
+  spawnZone: 2
+  attackSpeed: 5
+  startFireDelay: 1
+  movementSpeed: 1.5
+  deploySpeed: 5

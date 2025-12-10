@@ -13,8 +13,8 @@ public abstract class Enemigo : MonoBehaviour
     //private int currentTarget;
     private float currentShootTime;
     private Coroutine moveCoroutine, dieCoroutine;
-    public Transform escenario;
-    private bool canShoot;
+    public Transform escenario, player;
+    protected bool canShoot;
     protected int currentVida;
     public ParticleSystem particleSys;
     public SpriteRenderer sprRend;
@@ -92,9 +92,9 @@ public abstract class Enemigo : MonoBehaviour
         EventBus.EnemigoMuerto(enemyData.score);
         particleSys.Play();
         yield return new WaitForSeconds(2f);
+        pool.MeterEnLaPool(this);
         gameObject.SetActive(false);
         yield return null;
-        pool.MeterEnLaPool(this);
     }
 
 

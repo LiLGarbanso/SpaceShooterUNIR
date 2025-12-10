@@ -9,6 +9,6 @@ public class EnemyData : ScriptableObject
 
     [Header("Stats")]
     public int vida;
-    public int dmg, movementPoints, score;
+    public int dmg, movementPoints, score, spawnZone;
     public float attackSpeed, startFireDelay, movementSpeed, deploySpeed;
 }
