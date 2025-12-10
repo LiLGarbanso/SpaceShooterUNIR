@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject uiDerrota;
     private Coroutine crtDerrota;
     public RoundMannager roundMannager;
+    public Animator pointsAnimator;
 
     private void OnEnable()
     {
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         currentPuntos += puntos;
         UpdateUiPuntos();
+        pointsAnimator.SetTrigger("sumar");
     }
 
     public int GetPuntosJugador()
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
         if(currentPuntos < 0)
             currentPuntos = 0;
         UpdateUiPuntos();
+        pointsAnimator.SetTrigger("restar");
     }
 
     public void UpdateUiPuntos()
