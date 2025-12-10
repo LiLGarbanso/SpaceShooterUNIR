@@ -20,6 +20,7 @@
 
 # Rider / VSCode / JetBrains
 .vscode/
+.vs/
 .idea/
 *.csproj
 *.unityproj
