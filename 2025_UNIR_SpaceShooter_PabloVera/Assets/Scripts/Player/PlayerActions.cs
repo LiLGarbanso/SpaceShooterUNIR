@@ -37,7 +37,7 @@ public class PlayerActions : MonoBehaviour
             currentShootCadency = 0;
             Bullet bull = poolProyectiles.SacarDeLaPool();
             bull.gameObject.transform.SetParent(escenario);
-            bull.Init(cannon.up, cannon);
+            bull.Init(cannon.up, cannon, escenario, playerData.dmg);
             bull.gameObject.SetActive(true);
             SoundMannager.Instance.PlaySFX(playerData.SFX_disparo);
         }

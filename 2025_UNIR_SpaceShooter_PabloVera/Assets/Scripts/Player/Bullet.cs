@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] protected float ttl, speed;
-    [SerializeField] protected int dmg;
+    protected int dmg;
     protected Vector2 dir;
     protected float currentTtl;
     protected Transform initPos;
@@ -12,13 +12,16 @@ public class Bullet : MonoBehaviour
 
     public void SetBulletPool(BulletPool Bpool) { pool = Bpool; }
 
-    public void Init(Vector2 aim, Transform initPosition)
+    public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG)
     {
         initPos = initPosition;
         transform.position = initPos.position;
+        transform.SetParent(newParent);
         currentTtl = ttl;
         rb2d = GetComponent<Rigidbody2D>();
         dir = aim;
+        gameObject.SetActive(true);
+        dmg = bulletDMG;
     }
 
     private void FixedUpdate()

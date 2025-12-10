@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Snniper : Enemigo
 {
-    public Transform cannon;
+    public Transform player;
     public LineRenderer lineRenderer;
     private Vector3 movDir;
     [SerializeField]private float aimTime;
@@ -45,9 +45,7 @@ public class Snniper : Enemigo
         yield return new WaitForSeconds(aimTime);
         lineRenderer.enabled = false;
         Bullet bull = bulletPool.SacarDeLaPool();
-        bull.gameObject.transform.SetParent(escenario);
-        bull.Init(playerDir, cannon);
-        bull.gameObject.SetActive(true);
+        bull.Init(playerDir, cannon, escenario, enemyData.dmg);
         SoundMannager.Instance.PlaySFX(enemyData.SFX_disparo);
         transform.localRotation = Quaternion.identity;
         canShoot = true;

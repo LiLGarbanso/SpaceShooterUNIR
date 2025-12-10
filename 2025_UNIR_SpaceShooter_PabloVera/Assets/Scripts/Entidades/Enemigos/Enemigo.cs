@@ -7,13 +7,9 @@ public abstract class Enemigo : MonoBehaviour
 {
     public EnemyData enemyData;
     public BulletPool bulletPool;
-    //public List<Vector2> targetsPosMovement;
-    //public Vector2 spawnPos;
-    //private float umbralDistancia = 0.1f, currentShootTime, delayShoot = 2f;
-    //private int currentTarget;
     private float currentShootTime;
-    private Coroutine moveCoroutine, dieCoroutine;
-    public Transform escenario, player;
+    private Coroutine dieCoroutine;
+    public Transform escenario, cannon;
     protected bool canShoot;
     protected int currentVida;
     public ParticleSystem particleSys;
@@ -54,18 +50,6 @@ public abstract class Enemigo : MonoBehaviour
     public abstract void Shoot();
     public abstract void Movement();
 
-    //public void MoveToNextTarget()
-    //{
-    //    moveCoroutine = null;
-
-    //    if (currentTarget < targetsPosMovement.Count - 1)
-    //        currentTarget++;
-    //    else
-    //        currentTarget = 0;
-
-    //    moveCoroutine = StartCoroutine(Mover());
-    //}
-
     public void TakeDMG(int dmg)
     {
         currentVida -= dmg;
@@ -96,24 +80,6 @@ public abstract class Enemigo : MonoBehaviour
         gameObject.SetActive(false);
         yield return null;
     }
-
-
-
-    public void MoveToTargetPosition(Vector2 target)
-    {
-        transform.position = Vector2.MoveTowards(transform.position, target,enemyData.movementSpeed*Time.deltaTime);
-    }
-
-    //IEnumerator Mover()
-    //{
-    //    while (Vector2.Distance(transform.position, targetsPosMovement[currentTarget]) > 0.1f)
-    //    {
-    //        yield return new WaitForEndOfFrame();
-    //        MoveToTargetPosition(targetsPosMovement[currentTarget]);
-    //    }
-    //    MoveToNextTarget();
-    //    yield return null;
-    //}
 
     IEnumerator MoveSpawn(Vector2 pos)
     {

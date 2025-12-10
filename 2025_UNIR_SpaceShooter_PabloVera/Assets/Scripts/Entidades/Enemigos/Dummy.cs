@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Dummy : Enemigo
 {
-    public Transform cannon;
     private Vector3 movDir;
 
     private void Start()
@@ -27,9 +26,7 @@ public class Dummy : Enemigo
     public override void Shoot()
     {
         Bullet bull = bulletPool.SacarDeLaPool();
-        bull.gameObject.transform.SetParent(escenario);
-        bull.Init(cannon.up, cannon);
-        bull.gameObject.SetActive(true);
+        bull.Init(cannon.up, cannon, escenario, enemyData.dmg);
         SoundMannager.Instance.PlaySFX(enemyData.SFX_disparo);
     }
 }
