@@ -1,19 +1,18 @@
 using UnityEngine;
 
-public class RepararCrucero : Mejora
+public class ConstruirNave : Mejora
 {
     public CruceroEstelar cruceroEstelar;
-    public int saludRecuperada;
     public override void AplicarMejora()
     {
-        cruceroEstelar.RecuperarSalud(saludRecuperada);
+        cruceroEstelar.ConstruirNave();
     }
 
     public override bool RequisitosMejora()
     {
-        if (cruceroEstelar.GetCurrentHP() == cruceroEstelar.cruceroData.HP)
+        if (cruceroEstelar.GetCurrentNaves() == cruceroEstelar.cruceroData.navesIniciales)
             return false;
-        else 
+        else
             return true;
     }
 }

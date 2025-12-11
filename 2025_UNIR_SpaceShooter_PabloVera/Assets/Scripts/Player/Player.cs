@@ -49,4 +49,15 @@ public class Player : MonoBehaviour
         EventBus.GameOver();
         gameObject.SetActive(false);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision != null)
+        {
+            if(collision.gameObject.TryGetComponent<Mejora>(out var mejora))
+            {
+                mejora.TrySeleccionarMejora();
+            }
+        }
+    }
 }

@@ -51,11 +51,11 @@ public class Bullet : MonoBehaviour
                 target.TakeDMG(dmg);
                 Desactivar();
             }
-            else if(collision.gameObject.TryGetComponent<Mejora>(out var mejora))
-            {
-                mejora.TrySeleccionarMejora();
-                Desactivar();
-            }
+            //else if(collision.gameObject.TryGetComponent<Mejora>(out var mejora))
+            //{
+            //    mejora.TrySeleccionarMejora();
+            //    Desactivar();
+            //}
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)

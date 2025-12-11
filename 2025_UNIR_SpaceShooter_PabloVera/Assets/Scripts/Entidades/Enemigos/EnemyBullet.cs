@@ -6,14 +6,19 @@ public class EnemyBullet : Bullet
     {
         if (collision != null)
         {
-            if (collision.gameObject.TryGetComponent<Player>(out var target))
+            if (collision.gameObject.TryGetComponent<Player>(out var plyr))
             {
-                target.TakeDMG(dmg);
+                plyr.TakeDMG(dmg);
                 Desactivar();
             }
-            else if(collision.gameObject.TryGetComponent<CruceroEstelar>(out var target2))
+            else if(collision.gameObject.TryGetComponent<CruceroEstelar>(out var crucero))
             {
-                target2.TakeDMG(dmg);
+                crucero.TakeDMG(dmg);
+                Desactivar();
+            }
+            else if (collision.gameObject.TryGetComponent<Barrera>(out var barrera))
+            {
+                barrera.TakeDMG(dmg);
                 Desactivar();
             }
         }

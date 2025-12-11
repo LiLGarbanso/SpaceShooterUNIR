@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a620b822bdf67914faf3139bd6220998
+guid: 81e0c9f9d2593754a8ddcc9fd095668d
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -36,7 +36,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 8
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 639010586239837528
+  platformSettingsDirtyTick: 639010564918591845
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: naves
+  - name: spritesExtra
     originalName: 
-    pivot: {x: 0.5254237, y: -1.1333334}
+    pivot: {x: 0.74418604, y: -1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 59
-      height: 30
-    spriteID: 23e97d59b9a443d4b9d7e1287ab8cc7d
+      width: 43
+      height: 32
+    spriteID: 18135a9d895558b4e81190d7853952ec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -149,7 +149,112 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: playerShip
+  - name: barrera1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 59
+      width: 32
+      height: 6
+    spriteID: 771df4eca22ff6143a9eb1aa4d6056c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: barrera2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 51
+      width: 32
+      height: 6
+    spriteID: 47cc48e1447e4be44aa6361a7a93f2e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: barrera3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 41
+      width: 32
+      height: 6
+    spriteID: 6a82f2ee63f75124babc1382aa0f99e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: barrera4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 20
+      y: 33
+      width: 32
+      height: 6
+    spriteID: ba6852a381cae6342b96962a8fb62a8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: contadorNave
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 54
+      width: 7
+      height: 8
+    spriteID: 4b8e2172c1db50248aa310d08ccecbdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: crucero
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -158,94 +263,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 19
-      width: 13
-      height: 15
-    spriteID: 2097fc10d1ecf5d4bb1f4f369562d2a7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: bouncer
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 19
-      y: 20
-      width: 15
-      height: 9
-    spriteID: 263a72f6aa4d9be46a9b0f71a141aaef
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: dasher
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 37
-      y: 21
-      width: 11
-      height: 9
-    spriteID: 3f333c2810d8e3c4e88559303a4fbb5e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: kamikaze
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 54
-      y: 18
-      width: 9
-      height: 16
-    spriteID: b50a8f8e0a3c5984cbb450b17bdccd0a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: snipper
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 22
       y: 4
-      width: 10
-      height: 12
-    spriteID: 66c02ab35d5ea0842aa5ce33b3db71b5
+      width: 96
+      height: 13
+    spriteID: c623138b110799940bed948b90941062
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -258,25 +279,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2515777683
+      value0: 2391614646
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: naves
+    name: spritesExtra
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: naves
+    - name: spritesExtra
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 1
-        y: 34
-        width: 59
-        height: 30
-      spriteId: 23e97d59b9a443d4b9d7e1287ab8cc7d
+        x: 16
+        y: 3
+        width: 96
+        height: 61
+      spriteId: 18135a9d895558b4e81190d7853952ec
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -310,5 +331,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 64, y: 64}
-  previousTextureSize: {x: 128, y: 64}
+  canvasSize: {x: 128, y: 64}
+  previousTextureSize: {x: 128, y: 128}

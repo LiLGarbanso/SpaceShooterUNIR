@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour
 {
     public int numRondas;
     private int currentRound, currentPuntos;
-    public Text puntosTxt;
+    public TextMeshProUGUI puntosTxt, messageTxt;
     public GameObject uiDerrota;
     private Coroutine crtDerrota;
     public RoundMannager roundMannager;
-    public Animator pointsAnimator;
+    public Animator pointsAnimator, messageAnimator;
+    public float ttlMessage;
 
     private void OnEnable()
     {
@@ -36,6 +37,11 @@ public class GameManager : MonoBehaviour
         currentPuntos += puntos;
         UpdateUiPuntos();
         pointsAnimator.SetTrigger("sumar");
+    }
+
+    public void MostrarMensaje(string mensaje)
+    {
+        StartCoroutine(MostrarMensajeTmp(mensaje));
     }
 
     public int GetPuntosJugador()
@@ -86,6 +92,15 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("MenuInicial");
         crtDerrota = null;
+    }
+
+    IEnumerator MostrarMensajeTmp(string mssg)
+    {
+        messageTxt.text = mssg;
+        messageAnimator.SetTrigger("mensaje");
+        yield return new WaitForSeconds(ttlMessage);
+        messageTxt.text = "";
+        yield return null;
     }
 
     private void OnDisable()
