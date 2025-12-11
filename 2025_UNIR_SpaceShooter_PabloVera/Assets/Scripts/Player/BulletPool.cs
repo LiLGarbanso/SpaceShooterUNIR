@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BulletPool : MonoBehaviour
@@ -17,6 +18,16 @@ public class BulletPool : MonoBehaviour
             CreatePoolObject();
         }
     }
+
+    //---------MEJORAS--------------------------------//
+    public void UpgradeBulletSpeed(float increment)
+    {
+        foreach(Bullet bullet in pool)
+        {
+            bullet.IncreaseSpeed(increment);
+        }
+    }
+    //-----------------------------------------------//
 
     public Bullet SacarDeLaPool()
     {

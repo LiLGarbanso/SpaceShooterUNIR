@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\cruceroestelar\\cruceroestelar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cruceroestelar\\cruceroestelar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\mejoras\\mejoraacceleration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejoraacceleration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\cruceroestelar\\construirnave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cruceroestelar\\construirnave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\mejoras\\mejoraspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejoraspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\cruceroestelar\\repararcrucero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cruceroestelar\\repararcrucero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\mejoras\\mejoradmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejoradmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\cruceroestelar\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cruceroestelar\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\sistemas\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sistemas\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\mejoras\\mejoraatkspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejoraatkspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playeractions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\mejoras\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConstruirNave.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\ConstruirNave.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CruceroEstelar\\ConstruirNave.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\ConstruirNave.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CruceroEstelar\\ConstruirNave.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T11:19:31.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepararCrucero.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\RepararCrucero.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CruceroEstelar\\RepararCrucero.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\RepararCrucero.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CruceroEstelar\\RepararCrucero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T10:37:09.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CruceroEstelar.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\CruceroEstelar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CruceroEstelar\\CruceroEstelar.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\CruceroEstelar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CruceroEstelar\\CruceroEstelar.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
+              "Title": "MejoraAcceleration.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraAcceleration.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\MejoraAcceleration.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraAcceleration.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mejoras\\MejoraAcceleration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T10:38:31.824Z",
+              "WhenOpened": "2025-12-11T15:47:33.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Bullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Bullet.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Bullet.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\Bullet.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBQAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "MejoraSpeed.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraSpeed.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\MejoraSpeed.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraSpeed.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mejoras\\MejoraSpeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T22:33:36.735Z"
+              "WhenOpened": "2025-12-11T15:40:38.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Sistemas\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Sistemas\\GameManager.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Sistemas\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Sistemas\\GameManager.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCsAAAAzAAAAAAAAAA==",
+              "Title": "MejoraAtkSpeed.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraAtkSpeed.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\MejoraAtkSpeed.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraAtkSpeed.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mejoras\\MejoraAtkSpeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-10T20:16:29.142Z"
+              "WhenOpened": "2025-12-11T15:37:52.674Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Mejora.cs",
-              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\Mejora.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CruceroEstelar\\Mejora.cs",
-              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\CruceroEstelar\\Mejora.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CruceroEstelar\\Mejora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCUAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-11T10:37:12.137Z",
+              "WhenOpened": "2025-12-11T15:13:13.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerActions.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerActions.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerActions.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\PlayerActions.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerActions.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:02:13.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T12:04:36.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MejoraDMG.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraDMG.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\MejoraDMG.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraDMG.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mejoras\\MejoraDMG.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:01:29.256Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 220,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mejora.cs",
+              "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\Mejora.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\Mejora.cs",
+              "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\Mejora.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mejoras\\Mejora.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T15:31:49.867Z",
               "EditorCaption": ""
             }
           ]

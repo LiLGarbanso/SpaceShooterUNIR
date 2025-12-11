@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] protected float ttl, speed;
+    [SerializeField] protected float ttl, baseSpeed;
     protected int dmg;
     protected Vector2 dir;
     protected float currentTtl;
     protected Transform initPos;
     protected BulletPool pool;
     protected Rigidbody2D rb2d;
+    protected float speed;
 
     public void SetBulletPool(BulletPool Bpool) { pool = Bpool; }
+
+    public void IncreaseSpeed(float increment)
+    {
+        speed = Mathf.Clamp(speed+increment, 0, baseSpeed + increment*5);
+    }
+
+    private void Start()
+    {
+        speed = baseSpeed;
+    }
 
     public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG)
     {
@@ -51,22 +62,6 @@ public class Bullet : MonoBehaviour
                 target.TakeDMG(dmg);
                 Desactivar();
             }
-            //else if(collision.gameObject.TryGetComponent<Mejora>(out var mejora))
-            //{
-            //    mejora.TrySeleccionarMejora();
-            //    Desactivar();
-            //}
         }
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.collider != null)
-    //    {
-    //        if (collision.collider.gameObject.TryGetComponent<Entidad>(out var target))
-    //        {
-    //            target.TakeDMG(dmg);
-    //        }
-    //        Desactivar();
-    //    }
-    //}
 }
