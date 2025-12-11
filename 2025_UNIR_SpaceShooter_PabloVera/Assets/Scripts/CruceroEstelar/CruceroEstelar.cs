@@ -20,6 +20,8 @@ public class CruceroEstelar : MonoBehaviour
 
     public int GetCurrentHP() {  return currentHP; }
     public int GetCurrentNaves() { return currentNaves; }
+
+    public int GetMaxNaves() { return maxNaves; }
     private void Start()
     {
         currentLaserCooldown = cruceroData.laserCooldown;

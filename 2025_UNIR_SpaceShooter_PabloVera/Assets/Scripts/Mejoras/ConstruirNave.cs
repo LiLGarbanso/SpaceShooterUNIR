@@ -10,7 +10,7 @@ public class ConstruirNave : Mejora
 
     public override bool RequisitosMejora()
     {
-        if (cruceroEstelar.GetCurrentNaves() == cruceroEstelar.cruceroData.navesIniciales)
+        if (cruceroEstelar.GetCurrentNaves() == cruceroEstelar.GetMaxNaves())
             return false;
         else
             return true;

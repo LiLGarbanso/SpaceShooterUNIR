@@ -62,6 +62,10 @@ public class Bullet : MonoBehaviour
                 target.TakeDMG(dmg);
                 Desactivar();
             }
+            else if (collision.gameObject.CompareTag("tope"))
+            {
+                Desactivar();
+            }
         }
     }
 }

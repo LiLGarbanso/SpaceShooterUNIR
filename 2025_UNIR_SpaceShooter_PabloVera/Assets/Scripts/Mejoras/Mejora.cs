@@ -46,11 +46,13 @@ public abstract class Mejora : MonoBehaviour
     IEnumerator AnimCompra()
     {
         spRend.enabled = false;
+        txtPrecio.enabled = false;
         pSys.Play();
         yield return new WaitForSeconds(2f);
         gameObject.SetActive(false);
         spRend.enabled = true;
         active = true;
+        txtPrecio.enabled = true;
     }
 
     public abstract bool RequisitosMejora();

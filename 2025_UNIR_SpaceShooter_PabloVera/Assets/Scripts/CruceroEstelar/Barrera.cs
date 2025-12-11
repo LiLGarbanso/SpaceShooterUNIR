@@ -15,12 +15,13 @@ public class Barrera : MonoBehaviour
 
     private void Start()
     {
-        spRend = GetComponent<SpriteRenderer>();
-        col = GetComponent<Collider2D>();
+        
     }
 
     public void Init()
     {
+        spRend = GetComponent<SpriteRenderer>();
+        col = GetComponent<Collider2D>();
         currentHP = maxHP;
         spRend.sprite = sprites[0];
         col.enabled = true;
