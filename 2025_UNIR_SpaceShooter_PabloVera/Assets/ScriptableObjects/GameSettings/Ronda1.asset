@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoundData
   numDummies: 0
   numSnipper: 0
-  numDashers: 1
-  numKamimazes: 0
+  numDashers: 0
+  numKamimazes: 1
   dummyRatio: 0.2
-  snipperRatio: 0.5
-  dasherRatio: 1
+  snipperRatio: 5
+  dasherRatio: 2
   kamikazeRatio: 0
   dummySpawnDelay: 0
-  snipperSpawnDelay: 10
-  dasherSpawnDelay: 2
+  snipperSpawnDelay: 0
+  dasherSpawnDelay: 0
   kamikazeSpawnDelay: 0

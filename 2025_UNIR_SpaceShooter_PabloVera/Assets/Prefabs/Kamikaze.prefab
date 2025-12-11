@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8986153079132581523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Name
+      value: Kamikaze
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587873587256827009, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598576949738517755, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: poolSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3598576949738517755, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: prefabBullet
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7629502275287829235, guid: a620b822bdf67914faf3139bd6220998, type: 3}
+    - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Radius
+      value: 0.74
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+    - {fileID: 3598576949738517755, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+    m_RemovedGameObjects:
+    - {fileID: 8146359936990944369, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4239182351837471345}
+    - targetCorrespondingSourceObject: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4964787658628497918}
+  m_SourcePrefab: {fileID: 100100000, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+--- !u!198 &2910328000923997448 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4336476021632906084 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &4354190120597132120 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4954191227318326763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4068413137149279096, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7935313681731596483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4239182351837471345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935313681731596483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1e19b0e3e2f8a4b8b9704fc3bc1583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Kamikaze
+  enemyData: {fileID: 11400000, guid: 3827d67734e71544fb595821757148ab, type: 2}
+  bulletPool: {fileID: 4964787658628497918}
+  escenario: {fileID: 0}
+  cannon: {fileID: 0}
+  particleSys: {fileID: 2910328000923997448}
+  sprRend: {fileID: 4336476021632906084}
+  col: {fileID: 4354190120597132120}
+  escenarioMask:
+    serializedVersion: 2
+    m_Bits: 64
+  SFX_Rush: {fileID: 8300000, guid: 7bf6e83312cfe364bbf4d533d7b761f8, type: 3}
+  waitForRush: 1
+  rushSpeed: 20
+  f: 8
+  a: 0.025
+--- !u!114 &4964787658628497918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7935313681731596483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c263834653d18bc43b8fd0eb9e02556e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletPool
+  prefabBullet: {fileID: 0}
+  poolSize: 0
+  poolTransform: {fileID: 4954191227318326763}

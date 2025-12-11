@@ -1512,6 +1512,7 @@ GameObject:
   - component: {fileID: 684853855}
   - component: {fileID: 684853857}
   - component: {fileID: 684853856}
+  - component: {fileID: 684853858}
   m_Layer: 0
   m_Name: CruceroEstelar
   m_TagString: Untagged
@@ -1528,7 +1529,7 @@ Transform:
   m_GameObject: {fileID: 684853853}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07273865, y: -12.817215, z: 0}
+  m_LocalPosition: {x: 0.3, y: -15.15, z: 0}
   m_LocalScale: {x: 14.246728, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1637,7 +1638,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1653,6 +1654,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &684853858
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684853853}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &751065893
 GameObject:
   m_ObjectHideFlags: 0
@@ -3101,7 +3129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c13fb1d1c4a0642973e1bcd46827d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
-  prefabEnemigo: {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  prefabEnemigo: {fileID: 4239182351837471345, guid: 56f1144cf3830e04fa1ecc14d4280a51, type: 3}
   poolSize: 20
   poolTransform: {fileID: 1587715756}
 --- !u!114 &1587715758
@@ -3116,10 +3144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030542b6bf6cb514cb1a0ee06653df5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KamikazeSpawner
-  spawnZone: {fileID: 335721356}
+  spawnZone: {fileID: 1955959811}
   escenario: {fileID: 2089032312}
   enemyPool: {fileID: 1587715757}
   grid: {fileID: 1767518815}
+  cruceroCollider: {fileID: 684853857}
 --- !u!1 &1659613888
 GameObject:
   m_ObjectHideFlags: 0

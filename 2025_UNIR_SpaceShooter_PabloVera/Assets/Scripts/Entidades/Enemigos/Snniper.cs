@@ -51,4 +51,19 @@ public class Snniper : Enemigo
         canShoot = true;
         yield return null;
     }
+
+    public override IEnumerator Die()
+    {
+        sprRend.enabled = false;
+        canShoot = false;
+        col.enabled = false;
+        lineRenderer.enabled = false;
+        SoundMannager.Instance.PlaySFX(enemyData.SFX_muerte);
+        EventBus.EnemigoMuerto(enemyData.score);
+        particleSys.Play();
+        yield return new WaitForSeconds(2f);
+        pool.MeterEnLaPool(this);
+        gameObject.SetActive(false);
+        yield return null;
+    }
 }

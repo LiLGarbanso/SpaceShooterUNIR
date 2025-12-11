@@ -67,7 +67,7 @@ public abstract class Enemigo : MonoBehaviour
         }
     }
 
-    IEnumerator Die()
+    public virtual IEnumerator Die()
     {
         sprRend.enabled = false;
         canShoot = false;
@@ -92,5 +92,16 @@ public abstract class Enemigo : MonoBehaviour
         canShoot = true;
         col.enabled = true;
         yield return null;
+    }
+
+    public virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision != null)
+        {
+            if (collision.gameObject.TryGetComponent<Player>(out var target))
+            {
+                target.TakeDMG(enemyData.dmg);
+            }
+        }
     }
 }
