@@ -105,9 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8aeaec4df721547a9788289fa6cbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-  ttl: 2
-  speed: 20
-  dmg: 1
+  ttl: 5
+  baseSpeed: 10
 --- !u!58 &3834605758004408643
 CircleCollider2D:
   m_ObjectHideFlags: 0

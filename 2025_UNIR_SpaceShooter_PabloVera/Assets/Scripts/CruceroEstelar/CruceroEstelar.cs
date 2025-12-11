@@ -7,14 +7,16 @@ using UnityEngine.UI;
 
 public class CruceroEstelar : MonoBehaviour
 {
-    private int currentHP, currentNaves;
+    private int currentHP, currentNaves, maxNaves;
     private float currentLaserCooldown;
     public CruceroData cruceroData;
     public RectTransform uiHpCrucero;
     public Image hpBar;
     private float totalHeight;
     public List<GameObject> navesIMGs;
+    public GameObject naveExtra, naveExtraConFondo;
     public List<Barrera> barreras;
+    private bool hasHangarUpgrade;
 
     public int GetCurrentHP() {  return currentHP; }
     public int GetCurrentNaves() { return currentNaves; }
@@ -23,11 +25,13 @@ public class CruceroEstelar : MonoBehaviour
         currentLaserCooldown = cruceroData.laserCooldown;
         currentHP = cruceroData.HP;
         totalHeight = uiHpCrucero.rect.height;
-        currentNaves = cruceroData.navesIniciales;
+        maxNaves = cruceroData.navesIniciales;
+        currentNaves = maxNaves;
         UpdateNavesUI();
         UpdateUiCrucero();
         foreach (Barrera b in barreras)
             b.gameObject.SetActive(false);
+        hasHangarUpgrade = false;
     }
 
     //----------MEJORAS-----------------------------------------------//
@@ -53,7 +57,7 @@ public class CruceroEstelar : MonoBehaviour
 
     public void ConstruirNave()
     {
-        if (currentNaves < cruceroData.navesIniciales)
+        if (currentNaves < maxNaves)
             currentNaves++;
 
         UpdateNavesUI();
@@ -67,6 +71,16 @@ public class CruceroEstelar : MonoBehaviour
             b.Init();
         }
     }
+
+    public void MejorarHangar()
+    {
+        hasHangarUpgrade = true;
+        maxNaves++;
+        naveExtraConFondo.SetActive(true);
+        navesIMGs.Add(naveExtra);
+        UpdateNavesUI();
+    }
+    public bool HasHangarUpgrade() { return hasHangarUpgrade; }
 
     //---------------------------------------------------------------//
 

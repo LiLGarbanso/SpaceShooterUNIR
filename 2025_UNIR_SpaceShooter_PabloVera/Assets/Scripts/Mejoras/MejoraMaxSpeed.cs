@@ -1,16 +1,20 @@
 using UnityEngine;
 
-public class MejoraSpeed : MonoBehaviour
+public class MejoraMaxSpeed : Mejora
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public PlayerMovement playerMovement;
+    public int maxUpgrades;
+    public float increment;
+    public override void AplicarMejora()
     {
-        
+        playerMovement.IncreaseMaxSpeed(increment);
     }
 
-    // Update is called once per frame
-    void Update()
+    public override bool RequisitosMejora()
     {
-        
+        if (playerMovement.GetTimesSpeedIncreased() >= maxUpgrades)
+            return false;
+        else
+            return true;
     }
 }

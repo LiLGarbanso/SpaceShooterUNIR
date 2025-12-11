@@ -8,7 +8,7 @@ public class PlayerActions : MonoBehaviour
     public Transform escenario, cannon, cannon2, cannon3;
     public PlayerData playerData;
     private Player playerScript;
-    private bool canShoot, activeShield, canShield, canDobleShoot;
+    private bool canShoot, activeShield, canShield, canDobleShoot, canTripleShoot;
     private float currentShootCadency, currentShieldTime, atckSpeed;
     private Coroutine coroutineEscudo;
     private int extraDMG, timesDmgUpgrade, timesAtkSpeedUpgrade, timesBulletSpeedUpgrade;
@@ -24,6 +24,7 @@ public class PlayerActions : MonoBehaviour
         atckSpeed = playerData.shootCadency;
         canShield = false;
         canDobleShoot = false;
+        canTripleShoot = false;
     }
 
     //-----------MEJORAS-------------------------------//
@@ -52,6 +53,15 @@ public class PlayerActions : MonoBehaviour
     }
     public int GetTimesIncreasedBulletSpeed() { return timesBulletSpeedUpgrade; }
 
+    public void MultiShootUpgrade()
+    {
+        if(!canDobleShoot)
+            canDobleShoot=true;
+        else if(!canTripleShoot)
+            canTripleShoot=true;
+    }
+    public bool HasMultiShootUpgrade() { return canTripleShoot; }
+
     //------------------------------------------------//
 
     private void Update()
@@ -68,8 +78,22 @@ public class PlayerActions : MonoBehaviour
         {
             canShoot = false;
             currentShootCadency = 0;
-
-            if(canDobleShoot)
+            if (canTripleShoot)
+            {
+                Bullet b1 = poolProyectiles.SacarDeLaPool();
+                Bullet b2 = poolProyectiles.SacarDeLaPool();
+                Bullet b3 = poolProyectiles.SacarDeLaPool();
+                b1.gameObject.transform.SetParent(escenario);
+                b2.gameObject.transform.SetParent(escenario);
+                b3.gameObject.transform.SetParent(escenario);
+                b1.Init(cannon2.up, cannon, escenario, playerData.dmg + extraDMG);
+                b2.Init(cannon3.up, cannon2, escenario, playerData.dmg + extraDMG);
+                b3.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG);
+                b1.gameObject.SetActive(true);
+                b2.gameObject.SetActive(true);
+                b3.gameObject.SetActive(true);
+            }
+            else if(canDobleShoot)
             {
                 Bullet b1 = poolProyectiles.SacarDeLaPool();
                 Bullet b2 = poolProyectiles.SacarDeLaPool();

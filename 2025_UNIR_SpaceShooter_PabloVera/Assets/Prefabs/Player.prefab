@@ -9672,6 +9672,37 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &2045934148730846072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6425611482006501225}
+  m_Layer: 0
+  m_Name: Cannon3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6425611482006501225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045934148730846072}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.738, y: 0.249, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8522829785865231820}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2414556405296254578
 GameObject:
   m_ObjectHideFlags: 0
@@ -9709,6 +9740,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5901085533083288488}
+  - {fileID: 3469303515891314211}
+  - {fileID: 6425611482006501225}
   - {fileID: 2064065455076058535}
   - {fileID: 8200240589946915294}
   - {fileID: 803234905059870309}
@@ -9865,6 +9898,8 @@ MonoBehaviour:
   poolProyectiles: {fileID: 8386834737532406377}
   escenario: {fileID: 0}
   cannon: {fileID: 5901085533083288488}
+  cannon2: {fileID: 3469303515891314211}
+  cannon3: {fileID: 6425611482006501225}
   playerData: {fileID: 11400000, guid: c85fec082e0002642833afe3c7c7a75e, type: 2}
 --- !u!114 &550100417075538845
 MonoBehaviour:
@@ -10054,6 +10089,37 @@ MonoBehaviour:
   prefabBullet: {fileID: 8056394696688951226, guid: 0f5dd960a94dcfd4bbc35256381021a4, type: 3}
   poolSize: 20
   poolTransform: {fileID: 2064065455076058535}
+--- !u!1 &3005668839903768896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3469303515891314211}
+  m_Layer: 0
+  m_Name: Cannon2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3469303515891314211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3005668839903768896}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.764, y: 0.249, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8522829785865231820}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7372449097884904649
 GameObject:
   m_ObjectHideFlags: 0

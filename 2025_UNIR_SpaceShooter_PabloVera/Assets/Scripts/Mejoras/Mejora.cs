@@ -10,21 +10,27 @@ public abstract class Mejora : MonoBehaviour
     public AudioClip sfxMejora;
     public string mensajeRequisitos;
     public TextMeshPro txtPrecio;
+    public ParticleSystem pSys;
+    private bool active;
+    public SpriteRenderer spRend;
 
     private void Start()
     {
         txtPrecio.text = "" + coste;
+        active = true;
     }
 
     public void TrySeleccionarMejora()
     {
-        if (gm.GetPuntosJugador() >= coste)
+        if (active && gm.GetPuntosJugador() >= coste)
         {
             if (RequisitosMejora())
             {
                 gm.RestarPuntos(coste);
                 SoundMannager.Instance.PlaySFX(sfxMejora);
                 AplicarMejora();
+                active = false;
+                StartCoroutine(AnimCompra());
             }
             else
             {
@@ -35,6 +41,16 @@ public abstract class Mejora : MonoBehaviour
         {
             //SFX no se puede comprar
         }
+    }
+
+    IEnumerator AnimCompra()
+    {
+        spRend.enabled = false;
+        pSys.Play();
+        yield return new WaitForSeconds(2f);
+        gameObject.SetActive(false);
+        spRend.enabled = true;
+        active = true;
     }
 
     public abstract bool RequisitosMejora();
