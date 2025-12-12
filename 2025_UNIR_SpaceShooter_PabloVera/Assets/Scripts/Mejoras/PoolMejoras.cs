@@ -6,10 +6,21 @@ public class PoolMejoras : MonoBehaviour
     public List<Mejora> mejorasUnicas, mejorasNave, mejorasCrucero, currentPool;
     public List<Transform> puntosVenta;
     private int mejorasActivas;
+    public RefreshMejoras refresh;
 
     private void Start()
     {
         MostrarMejorasRand();
+    }
+
+    private void OnEnable()
+    {
+        EventBus.OnEliminarMejoraUnica += QuitarMejoraUnica;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.OnEliminarMejoraUnica -= QuitarMejoraUnica;
     }
 
     public void MostrarMejorasRand()
@@ -36,13 +47,13 @@ public class PoolMejoras : MonoBehaviour
 
     public void Refresh()
     {
-        DesactivarMarket();
         MostrarMejorasRand();
+        refresh.Reactivar();
     }
 
-    public void QuitarMejoraUnica(int idx)
+    public void QuitarMejoraUnica(Mejora m)
     {
-        mejorasUnicas.RemoveAt(idx);
+        mejorasUnicas.Remove(m);
     }
 
     public void QuitarMejoraNave(int idx)

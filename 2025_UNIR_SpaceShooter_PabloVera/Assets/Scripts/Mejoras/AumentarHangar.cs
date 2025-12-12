@@ -7,6 +7,7 @@ public class AumentarHangar : Mejora
     public override void AplicarMejora()
     {
         cruceroEstelar.MejorarHangar();
+        EventBus.EliminarMejoraUnica(this);
     }
 
     public override bool RequisitosMejora()

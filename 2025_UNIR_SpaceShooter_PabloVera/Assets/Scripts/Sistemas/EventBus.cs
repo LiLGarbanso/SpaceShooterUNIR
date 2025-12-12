@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*
@@ -36,6 +37,7 @@ public static class EventBus
     //public static event Action<parametro> OnEventoParametro;
     public static event Action OnEmpezarPartida, OnRondaFinalizada, OnGameOver;
     public static event Action<int> OnNextRound, OnEnemigoMuerto;
+    public static event Action<Mejora> OnEliminarMejoraUnica, OnEliminarMejoraNave, OnEliminarMejoraCrucero;
 
     //----------Funciones para invocar los eventos----------//
     //Se llama a estas funciones, no a los eventos directamente,
@@ -49,5 +51,8 @@ public static class EventBus
     public static void EnemigoMuerto(int score) => OnEnemigoMuerto?.Invoke(score);
     public static void GameOver() => OnGameOver?.Invoke();
     public static void NextRound(int ronda) => OnNextRound?.Invoke(ronda);
+    public static void EliminarMejoraUnica(Mejora m) => OnEliminarMejoraUnica?.Invoke(m);
+    public static void EliminarMejoraNave(Mejora m) => OnEliminarMejoraNave?.Invoke(m);
+    public static void EliminarMejoraCrucero(Mejora m) => OnEliminarMejoraCrucero?.Invoke(m);
 
 }

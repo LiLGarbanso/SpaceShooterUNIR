@@ -6,6 +6,7 @@ public class MejoraShield : Mejora
     public override void AplicarMejora()
     {
         playerActions.ShieldUpgrade();
+        EventBus.EliminarMejoraUnica(this);
     }
 
     public override bool RequisitosMejora()
