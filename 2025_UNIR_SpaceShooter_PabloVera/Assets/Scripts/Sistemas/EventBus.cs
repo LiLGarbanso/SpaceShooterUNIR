@@ -35,7 +35,7 @@ public static class EventBus
     //Con parámetros o sin (puede ser cualquier otra cosa que GameObject)
     //public static event Action OnEvento;
     //public static event Action<parametro> OnEventoParametro;
-    public static event Action OnEmpezarPartida, OnRondaFinalizada, OnGameOver;
+    public static event Action OnEmpezarPartida, OnRondaFinalizada, OnGameOver, OnPlayerDead;
     public static event Action<int> OnNextRound, OnEnemigoMuerto;
     public static event Action<Mejora> OnEliminarMejoraUnica, OnEliminarMejoraNave, OnEliminarMejoraCrucero;
 
@@ -50,6 +50,7 @@ public static class EventBus
     public static void FinalizarRonda() => OnRondaFinalizada?.Invoke();
     public static void EnemigoMuerto(int score) => OnEnemigoMuerto?.Invoke(score);
     public static void GameOver() => OnGameOver?.Invoke();
+    public static void MuerteJugador() => OnPlayerDead?.Invoke();
     public static void NextRound(int ronda) => OnNextRound?.Invoke(ronda);
     public static void EliminarMejoraUnica(Mejora m) => OnEliminarMejoraUnica?.Invoke(m);
     public static void EliminarMejoraNave(Mejora m) => OnEliminarMejoraNave?.Invoke(m);

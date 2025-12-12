@@ -21,6 +21,10 @@ public class EnemyBullet : Bullet
                 barrera.TakeDMG(dmg);
                 Desactivar();
             }
+            else if (collision.gameObject.CompareTag("tope"))
+            {
+                Desactivar();
+            }
         }
     }
 }

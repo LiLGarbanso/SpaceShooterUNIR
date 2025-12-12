@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26647328edb51a41ab724d9e47d6d83, type: 3}
+  m_Name: RondaFinal
+  m_EditorClassIdentifier: Assembly-CSharp::RoundData
+  numDummies: 25
+  numSnipper: 12
+  numDashers: 12
+  numKamimazes: 20
+  dummyRatio: 1
+  snipperRatio: 2
+  dasherRatio: 2
+  kamikazeRatio: 1
+  dummySpawnDelay: 0
+  snipperSpawnDelay: 10
+  dasherSpawnDelay: 10
+  kamikazeSpawnDelay: 5

@@ -7,10 +7,15 @@ public class PoolMejoras : MonoBehaviour
     public List<Transform> puntosVenta;
     private int mejorasActivas;
     public RefreshMejoras refresh;
+    public RoundMannager rm;
+    public NextRound nxt;
 
     private void Start()
     {
-        MostrarMejorasRand();
+        //MostrarMejorasRand();
+        refresh.Desactivar();
+        nxt.Desactivar();
+        nxt.txtRound.SetActive(false);
     }
 
     private void OnEnable()
@@ -25,6 +30,9 @@ public class PoolMejoras : MonoBehaviour
 
     public void MostrarMejorasRand()
     {
+        refresh.Activar();
+        nxt.Activar();
+        nxt.txtRound.SetActive(true);
         DesactivarMarket();
         mejorasActivas = mejorasUnicas.Count + mejorasNave.Count + mejorasCrucero.Count;
         currentPool.Clear();
@@ -78,5 +86,9 @@ public class PoolMejoras : MonoBehaviour
     public void FinalizarCompras()
     {
         DesactivarMarket();
+        refresh.Desactivar();
+        nxt.Desactivar();
+        nxt.txtRound.SetActive(false);
+        rm.StartRound();
     }
 }

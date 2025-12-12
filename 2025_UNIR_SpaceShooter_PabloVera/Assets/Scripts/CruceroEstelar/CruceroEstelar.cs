@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -17,6 +18,8 @@ public class CruceroEstelar : MonoBehaviour
     public GameObject naveExtra, naveExtraConFondo;
     public List<Barrera> barreras;
     private bool hasHangarUpgrade;
+    public Transform respawn;
+    public Player jugador;
 
     public int GetCurrentHP() {  return currentHP; }
     public int GetCurrentNaves() { return currentNaves; }
@@ -34,6 +37,38 @@ public class CruceroEstelar : MonoBehaviour
         foreach (Barrera b in barreras)
             b.gameObject.SetActive(false);
         hasHangarUpgrade = false;
+    }
+
+    private void OnEnable()
+    {
+        EventBus.OnPlayerDead += Respawnear;
+    }
+
+    private void OnDisable()
+    {
+        EventBus.OnPlayerDead -= Respawnear;
+    }
+
+    public void Respawnear()
+    {
+        currentNaves--;
+        if(currentNaves <= 0)
+        {
+            EventBus.GameOver();
+        }
+        else
+        {
+            StartCoroutine(RespawnPlayer());
+        }
+    }
+
+    IEnumerator RespawnPlayer()
+    {
+        yield return new WaitForSeconds(2f);
+        UpdateNavesUI();
+        jugador.transform.position = respawn.position;
+        jugador.ResetPlayer();
+        jugador.gameObject.SetActive(true);
     }
 
     //----------MEJORAS-----------------------------------------------//

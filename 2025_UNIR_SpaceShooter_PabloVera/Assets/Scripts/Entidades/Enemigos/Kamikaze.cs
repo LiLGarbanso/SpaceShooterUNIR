@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
-using static UnityEditor.PlayerSettings;
 
 public class Kamikaze : Enemigo
 {
@@ -46,7 +45,7 @@ public class Kamikaze : Enemigo
         SoundMannager.Instance.PlaySFX(SFX_Rush);
         Vector2 cruceroPos = new Vector2(Random.Range(cruceroEstelar.bounds.min.x, cruceroEstelar.bounds.max.x), Random.Range(cruceroEstelar.bounds.min.y, cruceroEstelar.bounds.max.y));
         //transform.localRotation = Quaternion.Euler(0f, 0f, Vector2.SignedAngle(cruceroPos, -transform.up));
-        transform.localRotation = Quaternion.AngleAxis(Vector2.SignedAngle(cruceroPos, -transform.up), new Vector3(0,0,1f));
+        //transform.localRotation = Quaternion.AngleAxis(Vector2.SignedAngle(cruceroPos, -transform.up), new Vector3(0,0,1f));
         //transform.localRotation =  Quaternion.LookRotation(cruceroPos, transform.up);
         yield return new WaitForSeconds(waitForRush);
 

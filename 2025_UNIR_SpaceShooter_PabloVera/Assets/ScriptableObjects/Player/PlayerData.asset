@@ -23,6 +23,6 @@ MonoBehaviour:
   maxSpeed: 400
   acceleration: 2000
   speedDrag: 0.95
-  shootCadency: 0.2
+  shootCadency: 0.7
   shieldTime: 1
   shieldCooldown: 3

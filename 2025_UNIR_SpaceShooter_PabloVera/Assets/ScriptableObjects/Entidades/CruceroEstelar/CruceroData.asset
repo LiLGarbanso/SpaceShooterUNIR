@@ -15,6 +15,6 @@ MonoBehaviour:
   SFX_recibirDMG: {fileID: 8300000, guid: 9a422c8d770598a4bb446f4f5267f1b9, type: 3}
   SFX_DispararCannonLaser: {fileID: 8300000, guid: 7ede79aca494ca44996040d9f0facbd8, type: 3}
   SFX_RecuperarHP: {fileID: 8300000, guid: 02b0e70088ce2e4459ab30d4906c8aa2, type: 3}
-  HP: 100
+  HP: 200
   navesIniciales: 3
   laserCooldown: 60

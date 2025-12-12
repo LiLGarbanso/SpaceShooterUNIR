@@ -7,13 +7,22 @@ public class Player : MonoBehaviour
     private bool canTakeDmg;
     public GameObject shieldGO;
     public RectTransform uiHpPlayer;
-    private float totalWidth;
+    private float totalWidth, initWidth;
 
     private void Start()
     {
         currentHP = playerData.vida;
         canTakeDmg = true;
         totalWidth = uiHpPlayer.rect.width;
+        initWidth = totalWidth;
+    }
+
+    public void ResetPlayer()
+    {
+        currentHP = playerData.vida;
+        canTakeDmg = true;
+        totalWidth = initWidth;
+        uiHpPlayer.sizeDelta = new Vector2(Mathf.Lerp(0, totalWidth, (float)currentHP / playerData.vida), uiHpPlayer.sizeDelta.y);
     }
 
     public void SetInvulnerability(bool invulnerability)
@@ -46,7 +55,7 @@ public class Player : MonoBehaviour
     public void Die()
     {
         SoundMannager.Instance.PlaySFX(playerData.SFX_muerte);
-        EventBus.GameOver();
+        EventBus.MuerteJugador();
         gameObject.SetActive(false);
     }
 

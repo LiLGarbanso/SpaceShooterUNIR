@@ -84,4 +84,11 @@ public class SoundMannager : MonoBehaviour
         sfxVolume = volume;
         sfxSource.volume = volume;
     }
+
+    public void PararSonido()
+    {
+        ambienceSource.Stop();
+        musicSource.Stop();
+        sfxSource.Stop();
+    }
 }

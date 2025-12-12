@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26647328edb51a41ab724d9e47d6d83, type: 3}
   m_Name: Ronda1
   m_EditorClassIdentifier: Assembly-CSharp::RoundData
-  numDummies: 0
-  numSnipper: 0
-  numDashers: 0
-  numKamimazes: 1
-  dummyRatio: 0.2
+  numDummies: 5
+  numSnipper: 2
+  numDashers: 1
+  numKamimazes: 2
+  dummyRatio: 1
   snipperRatio: 5
   dasherRatio: 2
   kamikazeRatio: 0
   dummySpawnDelay: 0
-  snipperSpawnDelay: 0
-  dasherSpawnDelay: 0
-  kamikazeSpawnDelay: 0
+  snipperSpawnDelay: 10
+  dasherSpawnDelay: 10
+  kamikazeSpawnDelay: 5

@@ -119,5 +119,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBullet
   ttl: 20
-  speed: 2
-  dmg: 1
+  baseSpeed: 2

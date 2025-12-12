@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RoundMannager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class RoundMannager : MonoBehaviour
     public EnemySpawner dummySpawner, snipperSpawner, dasherSpawner, kamikazeSpawner;
     public int maxRounds;
     public List<GameObject> roundIMGs;
+    public PoolMejoras upgradeMarket;
+    public GameObject player;
+    public Transform start;
+    public AudioClip musicaBatalla, musicaTienda;
 
     private void OnEnable()
     {
@@ -23,10 +28,12 @@ public class RoundMannager : MonoBehaviour
         potentialCurrentEnemies = 0;
         foreach(GameObject go in roundIMGs)
             go.SetActive(false);
+        upgradeMarket.DesactivarMarket();
     }
 
     public void StartRound()
     {
+        //SoundMannager.Instance.PlayMusic(musicaBatalla);
         currentRonda++;
         if (currentRonda >= maxRounds)
         {
@@ -99,7 +106,10 @@ public class RoundMannager : MonoBehaviour
 
         if(potentialCurrentEnemies  <= 0 && currentEnemies <= 0)
         {
-            Debug.Log("FIN DE LA RONDA");
+            upgradeMarket.MostrarMejorasRand();
+            player.gameObject.transform.position = start.position;
+            SoundMannager.Instance.PararSonido();
+            SoundMannager.Instance.PlayMusic(musicaTienda);
         }
     }
 
@@ -110,7 +120,7 @@ public class RoundMannager : MonoBehaviour
 
     private void RondaFinal()
     {
-        Debug.Log("BOSS FIGHT");
+        SceneManager.LoadScene("Victoria");
     }
 
     private void OnDisable()
