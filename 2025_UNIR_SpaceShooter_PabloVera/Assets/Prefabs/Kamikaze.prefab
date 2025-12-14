@@ -68,6 +68,18 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.74
       objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.86666673
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.22352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.7803922
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
     - {fileID: 3598576949738517755, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}

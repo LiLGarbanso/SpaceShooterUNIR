@@ -36,8 +36,9 @@ public class BulletPool : MonoBehaviour
             return bull;
         else
         {
-            poolSize++;
-            return CreatePoolObject();
+            //poolSize++;
+            //return CreatePoolObject();
+            return null;
         }
     }
 

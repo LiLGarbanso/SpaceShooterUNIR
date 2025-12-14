@@ -33,7 +33,7 @@ public class RoundMannager : MonoBehaviour
 
     public void StartRound()
     {
-        //SoundMannager.Instance.PlayMusic(musicaBatalla);
+        SoundMannager.Instance.PlayMusic(musicaBatalla);
         currentRonda++;
         if (currentRonda >= maxRounds)
         {

@@ -19,6 +19,6 @@ MonoBehaviour:
   dmg: 4
   score: 20
   attackSpeed: 1
-  startFireDelay: 1
+  startFireDelay: 3
   movementSpeed: 10
   deploySpeed: 10

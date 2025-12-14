@@ -16,6 +16,7 @@ public abstract class EnemySpawner : MonoBehaviour
 
         try
         {
+            enemy.gameObject.transform.position = transform.position;
             enemy.gameObject.SetActive(true);
             enemy.escenario = escenario;
             enemy.transform.SetParent(escenario);

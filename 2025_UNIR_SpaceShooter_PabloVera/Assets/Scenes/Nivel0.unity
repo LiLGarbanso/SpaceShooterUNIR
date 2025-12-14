@@ -940,7 +940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   prefabEnemigo: {fileID: 8004532629044742915, guid: 4627bf416b2755540b28cd66b96009aa, type: 3}
-  poolSize: 20
+  poolSize: 10
   poolTransform: {fileID: 145295306}
 --- !u!114 &145295308
 MonoBehaviour:
@@ -1628,7 +1628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   prefabEnemigo: {fileID: 6844178895700401636, guid: c45d6ea7cdf15c04e9396698f5e77975, type: 3}
-  poolSize: 20
+  poolSize: 15
   poolTransform: {fileID: 270291192}
 --- !u!114 &270291194
 MonoBehaviour:
@@ -2255,7 +2255,7 @@ MonoBehaviour:
   col: {fileID: 407987807}
   playerMovement: {fileID: 1536689337}
   maxUpgrades: 5
-  increment: 50
+  increment: 100
 --- !u!61 &407987807 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3980277424264518936, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
@@ -2654,6 +2654,7 @@ GameObject:
   - component: {fileID: 458812799}
   - component: {fileID: 458812798}
   - component: {fileID: 458812797}
+  - component: {fileID: 458812800}
   m_Layer: 6
   m_Name: Pared
   m_TagString: tope
@@ -2733,7 +2734,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2807,6 +2808,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &458812800
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458812795}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &470529788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3025,7 +3072,7 @@ MonoBehaviour:
   col: {fileID: 483260823}
   playerMovement: {fileID: 1536689337}
   maxUpgrades: 5
-  increment: 100
+  increment: 150
 --- !u!61 &483260823 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3980277424264518936, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
@@ -5524,10 +5571,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 325200905396965446, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 550100417075538845, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: uiHpPlayer
       value: 
       objectReference: {fileID: 1123095562}
+    - target: {fileID: 1135268509025199233, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2414556405296254578, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: m_Name
       value: Player
@@ -5548,9 +5603,13 @@ PrefabInstance:
       propertyPath: aceleration
       value: 2000
       objectReference: {fileID: 0}
+    - target: {fileID: 7372449097884904649, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8386834737532406377, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: poolSize
-      value: 200
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8522829785865231820, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5723,7 +5782,7 @@ MonoBehaviour:
   col: {fileID: 815292325}
   playerActions: {fileID: 1536689336}
   maxUpgrades: 5
-  increment: 0.5
+  increment: 5
 --- !u!61 &815292325 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3980277424264518936, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
@@ -6095,7 +6154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f7d4ba3b705a940a5aece081e42d2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundMannager
-  musicSource: {fileID: 1358072290}
+  musicSource: {fileID: 153603180}
   sfxSource: {fileID: 1358072290}
   ambienceSource: {fileID: 1542118673}
   musicVolume: 0.8
@@ -7416,7 +7475,7 @@ MonoBehaviour:
   col: {fileID: 1131073937}
   playerActions: {fileID: 1536689336}
   maxUppgrades: 5
-  speedReduction: 0.1
+  speedReduction: 0.2
 --- !u!61 &1131073937 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 3980277424264518936, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
@@ -8706,7 +8765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   prefabEnemigo: {fileID: 4239182351837471345, guid: 56f1144cf3830e04fa1ecc14d4280a51, type: 3}
-  poolSize: 20
+  poolSize: 15
   poolTransform: {fileID: 1587715756}
 --- !u!114 &1587715758
 MonoBehaviour:
@@ -10078,6 +10137,7 @@ GameObject:
   - component: {fileID: 1876821365}
   - component: {fileID: 1876821364}
   - component: {fileID: 1876821363}
+  - component: {fileID: 1876821366}
   m_Layer: 6
   m_Name: Pared (1)
   m_TagString: tope
@@ -10157,7 +10217,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -10231,6 +10291,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1876821366
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876821361}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1877027543
 GameObject:
   m_ObjectHideFlags: 0
@@ -15570,7 +15676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPool
   prefabEnemigo: {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
-  poolSize: 40
+  poolSize: 20
   poolTransform: {fileID: 1920892648}
 --- !u!114 &1920892650
 MonoBehaviour:

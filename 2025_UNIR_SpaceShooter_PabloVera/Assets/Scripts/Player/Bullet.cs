@@ -11,11 +11,25 @@ public class Bullet : MonoBehaviour
     protected Rigidbody2D rb2d;
     protected float speed;
 
+    private void OnEnable()
+    {
+        enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        enabled = false;
+    }
     public void SetBulletPool(BulletPool Bpool) { pool = Bpool; }
 
     public void IncreaseSpeed(float increment)
     {
         speed = Mathf.Clamp(speed+increment, 0, baseSpeed + increment*5);
+    }
+
+    private void Awake()
+    {
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -25,11 +39,11 @@ public class Bullet : MonoBehaviour
 
     public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG)
     {
+        enabled = true;
         initPos = initPosition;
         transform.position = initPos.position;
         transform.SetParent(newParent);
         currentTtl = ttl;
-        rb2d = GetComponent<Rigidbody2D>();
         dir = aim;
         gameObject.SetActive(true);
         dmg = bulletDMG;
@@ -42,7 +56,7 @@ public class Bullet : MonoBehaviour
             Desactivar();
 
         //transform.position += dir.normalized * speed*Time.deltaTime;
-        rb2d.MovePosition(rb2d.position + dir.normalized * speed * Time.deltaTime);
+        rb2d.MovePosition(rb2d.position + dir.normalized * speed * Time.fixedDeltaTime);
     }
 
     public void Desactivar()

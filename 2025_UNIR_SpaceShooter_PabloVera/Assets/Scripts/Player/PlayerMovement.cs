@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private Vector2 dir, currentVelocity;
     public PlayerData playerData;
-    private float currentAcceleration, currrentMaxSpeed;
+    public float currentAcceleration, currrentMaxSpeed;
     private int timesSpeedIncreased, timesAccelerationIncreased;
 
     private void Start()
@@ -46,8 +46,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        currentVelocity += dir * playerData.acceleration * Time.deltaTime;
-        currentVelocity = Vector2.ClampMagnitude(currentVelocity, playerData.maxSpeed);
+        currentVelocity += dir * currentAcceleration * Time.deltaTime;
+        currentVelocity = Vector2.ClampMagnitude(currentVelocity, currrentMaxSpeed);
         rb2d.linearVelocity = currentVelocity * Time.deltaTime;
         if(dir.x <= 0.1 && dir.y <= 0.1)
             currentVelocity *= playerData.speedDrag;

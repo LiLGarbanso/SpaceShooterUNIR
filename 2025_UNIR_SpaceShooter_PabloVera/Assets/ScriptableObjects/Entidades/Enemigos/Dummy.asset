@@ -15,9 +15,8 @@ MonoBehaviour:
   SFX_disparo: {fileID: 8300000, guid: 4bc8fb5e3886a7e4396b17ff8aaf8557, type: 3}
   SFX_recibirDMG: {fileID: 8300000, guid: b1fb6f8831969cc418eb09bc95a9b634, type: 3}
   SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
-  vida: 3
+  vida: 2
   dmg: 1
-  movementPoints: 4
   score: 5
   attackSpeed: 3
   startFireDelay: 0.5

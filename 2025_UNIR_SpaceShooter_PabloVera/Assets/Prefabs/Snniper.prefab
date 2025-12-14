@@ -202,9 +202,25 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1831932300119153671, guid: a620b822bdf67914faf3139bd6220998, type: 3}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Radius
       value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.8705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2816035112070285555, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
@@ -238,14 +254,14 @@ MonoBehaviour:
   enemyData: {fileID: 11400000, guid: 85a3c41cb3969824d88a90f53383cac1, type: 2}
   bulletPool: {fileID: 3809741165602414552}
   escenario: {fileID: 0}
-  player: {fileID: 0}
+  cannon: {fileID: 2381974165193904926}
   particleSys: {fileID: 5906726771624038584}
   sprRend: {fileID: 5022963457623848660}
   col: {fileID: 5041313082898863848}
   escenarioMask:
     serializedVersion: 2
     m_Bits: 64
-  cannon: {fileID: 2381974165193904926}
+  player: {fileID: 0}
   lineRenderer: {fileID: 6922828810301963825}
   aimTime: 2
 --- !u!4 &2381974165193904926 stripped

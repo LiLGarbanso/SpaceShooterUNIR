@@ -78,6 +78,7 @@ public abstract class Enemigo : MonoBehaviour
         yield return new WaitForSeconds(2f);
         pool.MeterEnLaPool(this);
         gameObject.SetActive(false);
+        StopAllCoroutines();
         yield return null;
     }
 
@@ -86,11 +87,12 @@ public abstract class Enemigo : MonoBehaviour
         while (Vector2.Distance(transform.position, pos) > 0.1f)
         {
             transform.position = Vector2.MoveTowards(transform.position, pos, enemyData.deploySpeed * Time.deltaTime);
-            yield return new WaitForEndOfFrame();
+            yield return null;
         }
         //MoveToNextTarget();
         canShoot = true;
         col.enabled = true;
+        StopAllCoroutines();
         yield return null;
     }
 
