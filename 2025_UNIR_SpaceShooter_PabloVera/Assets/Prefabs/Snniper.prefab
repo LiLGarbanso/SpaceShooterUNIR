@@ -150,6 +150,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Name
       value: Snniper
@@ -208,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Radius
-      value: 0.87
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -234,6 +242,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8004532629044742915}
   m_SourcePrefab: {fileID: 100100000, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+--- !u!61 &1146169885628761165 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 373338953362221859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1694622922064983411 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
@@ -257,7 +270,7 @@ MonoBehaviour:
   cannon: {fileID: 2381974165193904926}
   particleSys: {fileID: 5906726771624038584}
   sprRend: {fileID: 5022963457623848660}
-  col: {fileID: 5041313082898863848}
+  col: {fileID: 1146169885628761165}
   escenarioMask:
     serializedVersion: 2
     m_Bits: 64
@@ -288,11 +301,6 @@ MonoBehaviour:
 --- !u!212 &5022963457623848660 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
-  m_PrefabInstance: {fileID: 373338953362221859}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &5041313082898863848 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
   m_PrefabInstance: {fileID: 373338953362221859}
   m_PrefabAsset: {fileID: 0}
 --- !u!198 &5906726771624038584 stripped

@@ -72,6 +72,12 @@ public class Kamikaze : Enemigo
                 StopAllCoroutines();
                 StartCoroutine(Die());
             }
+            else if (collision.gameObject.TryGetComponent<Barrera>(out var barrera))
+            {
+                barrera.TakeDMG(enemyData.dmg);
+                StopAllCoroutines();
+                StartCoroutine(Die());
+            }
         }
         
     }

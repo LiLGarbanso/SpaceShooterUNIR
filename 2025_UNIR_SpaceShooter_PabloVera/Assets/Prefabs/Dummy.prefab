@@ -4904,9 +4904,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2587873587256827009}
   - component: {fileID: 4655450335762406903}
-  - component: {fileID: 4672495905877786059}
   - component: {fileID: 2816035112070285555}
   - component: {fileID: 3598576949738517755}
+  - component: {fileID: 776412151523815278}
   m_Layer: 0
   m_Name: Dummy
   m_TagString: Untagged
@@ -4990,8 +4990,45 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4672495905877786059
-CircleCollider2D:
+--- !u!114 &2816035112070285555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345133031363599952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeebe0d6d332d6344b16d5adf4371f7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dummy
+  enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
+  bulletPool: {fileID: 3598576949738517755}
+  escenario: {fileID: 0}
+  cannon: {fileID: 2603121467397961789}
+  particleSys: {fileID: 6113273074692946843}
+  sprRend: {fileID: 4655450335762406903}
+  col: {fileID: 776412151523815278}
+  escenarioMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &3598576949738517755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345133031363599952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c263834653d18bc43b8fd0eb9e02556e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BulletPool
+  prefabBullet: {fileID: 6279844413188044622, guid: 536453708fb0d694e8a91d03d1d84549, type: 3}
+  poolSize: 8
+  poolTransform: {fileID: 4068413137149279096}
+--- !u!61 &776412151523815278
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5024,45 +5061,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 1.18
---- !u!114 &2816035112070285555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345133031363599952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeebe0d6d332d6344b16d5adf4371f7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dummy
-  enemyData: {fileID: 11400000, guid: e7e9533239ef8a345ae84d92be106199, type: 2}
-  bulletPool: {fileID: 3598576949738517755}
-  escenario: {fileID: 0}
-  cannon: {fileID: 2603121467397961789}
-  particleSys: {fileID: 6113273074692946843}
-  sprRend: {fileID: 4655450335762406903}
-  col: {fileID: 4672495905877786059}
-  escenarioMask:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &3598576949738517755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345133031363599952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c263834653d18bc43b8fd0eb9e02556e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletPool
-  prefabBullet: {fileID: 6279844413188044622, guid: 536453708fb0d694e8a91d03d1d84549, type: 3}
-  poolSize: 8
-  poolTransform: {fileID: 4068413137149279096}
+  m_Offset: {x: 0, y: 0.09}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 0.5625}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.3, y: 1.18}
+  m_EdgeRadius: 0
 --- !u!1 &7392899358884066610
 GameObject:
   m_ObjectHideFlags: 0

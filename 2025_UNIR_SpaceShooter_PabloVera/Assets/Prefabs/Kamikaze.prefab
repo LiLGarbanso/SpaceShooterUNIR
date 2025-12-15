@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Name
       value: Kamikaze
@@ -64,9 +72,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -7629502275287829235, guid: a620b822bdf67914faf3139bd6220998, type: 3}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.51531124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Radius
-      value: 0.74
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -104,11 +124,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
   m_PrefabInstance: {fileID: 8986153079132581523}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &4354190120597132120 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
-  m_PrefabInstance: {fileID: 8986153079132581523}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4954191227318326763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4068413137149279096, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
@@ -137,7 +152,7 @@ MonoBehaviour:
   cannon: {fileID: 0}
   particleSys: {fileID: 2910328000923997448}
   sprRend: {fileID: 4336476021632906084}
-  col: {fileID: 4354190120597132120}
+  col: {fileID: 8535275814246498813}
   escenarioMask:
     serializedVersion: 2
     m_Bits: 64
@@ -161,3 +176,8 @@ MonoBehaviour:
   prefabBullet: {fileID: 0}
   poolSize: 0
   poolTransform: {fileID: 4954191227318326763}
+--- !u!61 &8535275814246498813 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 8986153079132581523}
+  m_PrefabAsset: {fileID: 0}

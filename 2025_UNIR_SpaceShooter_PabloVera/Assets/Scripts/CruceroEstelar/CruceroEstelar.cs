@@ -20,6 +20,8 @@ public class CruceroEstelar : MonoBehaviour
     private bool hasHangarUpgrade;
     public Transform respawn;
     public Player jugador;
+    public ParticleSystem particulas;
+    public Animator animator;
 
     public int GetCurrentHP() {  return currentHP; }
     public int GetCurrentNaves() { return currentNaves; }
@@ -52,7 +54,8 @@ public class CruceroEstelar : MonoBehaviour
     public void Respawnear()
     {
         currentNaves--;
-        if(currentNaves <= 0)
+        UpdateNavesUI();
+        if (currentNaves <= 0)
         {
             EventBus.GameOver();
         }
@@ -65,7 +68,7 @@ public class CruceroEstelar : MonoBehaviour
     IEnumerator RespawnPlayer()
     {
         yield return new WaitForSeconds(2f);
-        UpdateNavesUI();
+        
         jugador.transform.position = respawn.position;
         jugador.ResetPlayer();
         jugador.gameObject.SetActive(true);
@@ -130,7 +133,8 @@ public class CruceroEstelar : MonoBehaviour
     {
         currentHP -= dmg;
         UpdateUiCrucero();
-
+        particulas.Play();
+        animator.SetTrigger("dmg");
         if (currentHP <= 0)
         {
             Die();

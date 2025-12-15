@@ -150,6 +150,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.6875
+      objectReference: {fileID: 0}
     - target: {fileID: 1345133031363599952, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Name
       value: Dasher
@@ -212,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: -5506626047703550016, guid: a620b822bdf67914faf3139bd6220998, type: 3}
     - target: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: m_Radius
-      value: 0.82
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6113273074692946843, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -261,7 +265,7 @@ MonoBehaviour:
   cannon: {fileID: 4085860179228805653}
   particleSys: {fileID: 5207696609237944755}
   sprRend: {fileID: 6631755422296272863}
-  col: {fileID: 6650632770209304547}
+  col: {fileID: 1609368077319118150}
   escenarioMask:
     serializedVersion: 2
     m_Bits: 64
@@ -269,6 +273,11 @@ MonoBehaviour:
   fireDelay: 0.5
   lineRenderer: {fileID: 6606654904432068433}
   dashes: 3
+--- !u!61 &1609368077319118150 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 776412151523815278, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
+  m_PrefabInstance: {fileID: 2059201667557634600}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &3270589330082006739 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3598576949738517755, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
@@ -298,10 +307,5 @@ ParticleSystem:
 --- !u!212 &6631755422296272863 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 4655450335762406903, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
-  m_PrefabInstance: {fileID: 2059201667557634600}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &6650632770209304547 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 4672495905877786059, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}
   m_PrefabInstance: {fileID: 2059201667557634600}
   m_PrefabAsset: {fileID: 0}
