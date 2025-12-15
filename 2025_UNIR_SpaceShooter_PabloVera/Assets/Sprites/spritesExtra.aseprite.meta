@@ -157,7 +157,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 20
+      x: 34
       y: 62
       width: 32
       height: 6
@@ -178,7 +178,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 20
+      x: 34
       y: 54
       width: 32
       height: 6
@@ -199,7 +199,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 20
+      x: 34
       y: 44
       width: 32
       height: 6
@@ -220,7 +220,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 20
+      x: 34
       y: 36
       width: 32
       height: 6
@@ -241,7 +241,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 56
+      x: 70
       y: 57
       width: 7
       height: 8
@@ -262,7 +262,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 4
+      x: 18
       y: 4
       width: 96
       height: 16
@@ -283,7 +283,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 70
+      x: 84
       y: 54
       width: 12
       height: 12
@@ -304,7 +304,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 86
+      x: 100
       y: 54
       width: 12
       height: 12
@@ -325,7 +325,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 102
+      x: 116
       y: 54
       width: 12
       height: 12
@@ -346,7 +346,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 70
+      x: 84
       y: 38
       width: 12
       height: 12
@@ -367,7 +367,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 86
+      x: 100
       y: 38
       width: 12
       height: 12
@@ -388,7 +388,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 102
+      x: 116
       y: 38
       width: 12
       height: 12
@@ -409,7 +409,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 38
+      x: 52
       y: 22
       width: 12
       height: 12
@@ -430,7 +430,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 54
+      x: 68
       y: 22
       width: 12
       height: 12
@@ -451,7 +451,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 70
+      x: 84
       y: 22
       width: 12
       height: 12
@@ -472,7 +472,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 86
+      x: 100
       y: 22
       width: 12
       height: 12
@@ -493,7 +493,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 102
+      x: 116
       y: 22
       width: 12
       height: 12
@@ -514,7 +514,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 22
+      x: 36
       y: 22
       width: 12
       height: 12
@@ -535,11 +535,53 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 6
+      x: 20
       y: 22
       width: 12
       height: 12
     spriteID: 7edb4ed58f5344d4f9bb39efa92ebf09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: flecha
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 22
+      y: 40
+      width: 8
+      height: 8
+    spriteID: b43ee1204fff0b543a77b459eff562c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: spritesExtra_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 22
+      width: 12
+      height: 12
+    spriteID: 72de38b27dc814d42945129f6be4fc42
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -566,9 +608,9 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 16
+        x: 2
         y: 0
-        width: 110
+        width: 124
         height: 64
       spriteId: 18135a9d895558b4e81190d7853952ec
     linkedCells: []
@@ -605,4 +647,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 64}
-  previousTextureSize: {x: 128, y: 128}
+  previousTextureSize: {x: 256, y: 128}

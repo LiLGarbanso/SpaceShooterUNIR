@@ -13,7 +13,7 @@ public class RoundMannager : MonoBehaviour
     public List<GameObject> roundIMGs;
     public PoolMejoras upgradeMarket;
     public GameObject player;
-    public Transform start;
+    public Transform start, startTienda;
     public AudioClip musicaBatalla, musicaTienda;
 
     private void OnEnable()
@@ -111,6 +111,11 @@ public class RoundMannager : MonoBehaviour
             SoundMannager.Instance.PararSonido();
             SoundMannager.Instance.PlayMusic(musicaTienda);
         }
+    }
+
+    IEnumerator FinRonda()
+    {
+        yield return null;
     }
 
     private int CalcularTotalEnemigos()
