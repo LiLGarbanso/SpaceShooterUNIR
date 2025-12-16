@@ -15,6 +15,7 @@ public class MenuInicial : MonoBehaviour
     public void CargarEscena()
     {
         SceneManager.LoadScene(nivel);
+        gameObject.SetActive(false);
         //SceneManager.LoadSceneAsync(nivel)
     }
 

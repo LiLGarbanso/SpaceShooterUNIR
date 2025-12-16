@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         EventBus.OnEnemigoMuerto += SumarPuntos;
     }
 
-    void Start()
+    public void Init()
     {
         crtDerrota = null;
         uiDerrota.SetActive(false);
