@@ -15,6 +15,7 @@ public class RoundMannager : MonoBehaviour
     public PlayerMovement player;
     public Transform start;
     public AudioClip musicaBatalla, musicaTienda;
+    public string escenaVictoria;
 
     private void OnEnable()
     {
@@ -133,7 +134,7 @@ public class RoundMannager : MonoBehaviour
 
     private void RondaFinal()
     {
-        SceneManager.LoadScene("Victoria");
+        SceneManager.LoadScene(escenaVictoria);
     }
 
     private void OnDisable()

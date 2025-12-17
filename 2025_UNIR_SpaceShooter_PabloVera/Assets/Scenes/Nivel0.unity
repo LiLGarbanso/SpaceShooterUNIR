@@ -681,6 +681,7 @@ MonoBehaviour:
   start: {fileID: 292162333}
   musicaBatalla: {fileID: 8300000, guid: 852abf0d67668134da3c7082cca2bbdc, type: 3}
   musicaTienda: {fileID: 8300000, guid: 8ce909ba72477a140a41e156b51a1c67, type: 3}
+  escenaVictoria: Victoria2
 --- !u!1 &118045110
 GameObject:
   m_ObjectHideFlags: 0
