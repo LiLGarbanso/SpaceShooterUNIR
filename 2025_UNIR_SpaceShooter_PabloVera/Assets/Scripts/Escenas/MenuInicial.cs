@@ -10,7 +10,7 @@ public class MenuInicial : MonoBehaviour
     public GameObject sp1, sp2, txt, player;
     public AudioClip sndANim;
     public Animator animator;
-    public bool isExit;
+    public bool isExit, isVictoria;
 
     public void CargarEscena()
     {
@@ -34,6 +34,10 @@ public class MenuInicial : MonoBehaviour
                 if (isExit)
                 {
                     Application.Quit();
+                }
+                else if (isVictoria)
+                {
+                    CargarEscena();
                 }
                 else
                 {
