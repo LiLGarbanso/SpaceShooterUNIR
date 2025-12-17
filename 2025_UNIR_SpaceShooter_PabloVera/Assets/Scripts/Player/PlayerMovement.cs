@@ -8,6 +8,14 @@ public class PlayerMovement : MonoBehaviour
     public PlayerData playerData;
     public float currentAcceleration, currrentMaxSpeed;
     private int timesSpeedIncreased, timesAccelerationIncreased;
+    private bool canMove;
+
+    public void SetMovement(bool move)
+    {
+        canMove = move;
+        if(!canMove)
+            currentVelocity = Vector2.zero;
+    }
 
     private void Start()
     {
@@ -17,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         currrentMaxSpeed = playerData.maxSpeed;
         timesAccelerationIncreased = 0;
         timesSpeedIncreased = 0;
+        canMove = true;
     }
 
     //----------MEJORAS------------------------------------//
@@ -46,12 +55,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        currentVelocity += dir * currentAcceleration * Time.deltaTime;
-        currentVelocity = Vector2.ClampMagnitude(currentVelocity, currrentMaxSpeed);
-        rb2d.linearVelocity = currentVelocity * Time.deltaTime;
-        if(dir.x <= 0.1 && dir.y <= 0.1)
-            currentVelocity *= playerData.speedDrag;
-
+        if (canMove)
+        {
+            currentVelocity += dir * currentAcceleration * Time.deltaTime;
+            currentVelocity = Vector2.ClampMagnitude(currentVelocity, currrentMaxSpeed);
+            rb2d.linearVelocity = currentVelocity * Time.deltaTime;
+            if (dir.x <= 0.1 && dir.y <= 0.1)
+                currentVelocity *= playerData.speedDrag;
+        }
         //rb2d.linearVelocity = dir.normalized * currentVelocity * Time.deltaTime;
     }
 }

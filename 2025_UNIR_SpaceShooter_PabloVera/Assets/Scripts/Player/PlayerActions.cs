@@ -86,12 +86,9 @@ public class PlayerActions : MonoBehaviour
                 b1.gameObject.transform.SetParent(escenario);
                 b2.gameObject.transform.SetParent(escenario);
                 b3.gameObject.transform.SetParent(escenario);
-                b1.Init(cannon2.up, cannon, escenario, playerData.dmg + extraDMG);
-                b2.Init(cannon3.up, cannon2, escenario, playerData.dmg + extraDMG);
+                b1.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG);
+                b2.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG);
                 b3.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG);
-                b1.gameObject.SetActive(true);
-                b2.gameObject.SetActive(true);
-                b3.gameObject.SetActive(true);
             }
             else if(canDobleShoot)
             {
@@ -101,15 +98,12 @@ public class PlayerActions : MonoBehaviour
                 b2.gameObject.transform.SetParent(escenario);
                 b1.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG);
                 b2.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG);
-                b1.gameObject.SetActive(true);
-                b2.gameObject.SetActive(true);
             }
             else
             {
                 Bullet bull = poolProyectiles.SacarDeLaPool();
                 bull.gameObject.transform.SetParent(escenario);
                 bull.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG);
-                bull.gameObject.SetActive(true);
             }
             SoundMannager.Instance.PlaySFX(playerData.SFX_disparo);
         }

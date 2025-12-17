@@ -12,8 +12,8 @@ public class RoundMannager : MonoBehaviour
     public int maxRounds;
     public List<GameObject> roundIMGs;
     public PoolMejoras upgradeMarket;
-    public GameObject player;
-    public Transform start, startTienda;
+    public PlayerMovement player;
+    public Transform start;
     public AudioClip musicaBatalla, musicaTienda;
 
     private void OnEnable()
@@ -106,15 +106,23 @@ public class RoundMannager : MonoBehaviour
 
         if(potentialCurrentEnemies  <= 0 && currentEnemies <= 0)
         {
-            upgradeMarket.MostrarMejorasRand();
-            player.gameObject.transform.position = start.position;
-            SoundMannager.Instance.PararSonido();
-            SoundMannager.Instance.PlayMusic(musicaTienda);
+            StartCoroutine(FinRonda());
         }
     }
 
     IEnumerator FinRonda()
     {
+        player.SetMovement(false);
+        SoundMannager.Instance.PararSonido();
+        SoundMannager.Instance.PararSonido();
+        while (Vector2.Distance(start.position, player.gameObject.transform.position) > 0.1)
+        {
+            player.gameObject.transform.position = Vector2.MoveTowards(player.gameObject.transform.position, start.position, 0.1f);
+            yield return null;
+        }
+        player.SetMovement(true);
+        upgradeMarket.MostrarMejorasRand();
+        SoundMannager.Instance.PlayMusic(musicaTienda);
         yield return null;
     }
 

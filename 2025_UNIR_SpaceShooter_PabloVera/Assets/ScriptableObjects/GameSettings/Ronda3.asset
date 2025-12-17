@@ -21,6 +21,6 @@ MonoBehaviour:
   dasherRatio: 1
   kamikazeRatio: 1
   dummySpawnDelay: 0
-  snipperSpawnDelay: 5
+  snipperSpawnDelay: 0
   dasherSpawnDelay: 5
-  kamikazeSpawnDelay: 5
+  kamikazeSpawnDelay: 0

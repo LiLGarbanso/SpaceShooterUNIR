@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int numRondas;
+    public int numRondas, initPuntos;
     private int currentRound, currentPuntos;
     public TextMeshProUGUI puntosTxt, messageTxt;
     public GameObject uiDerrota;
@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         EventBus.EmpezarPartida();
         currentRound = 0;
         //SiguienteRonda();
+        SumarPuntos(initPuntos);
         roundMannager.StartRound();
     }
 

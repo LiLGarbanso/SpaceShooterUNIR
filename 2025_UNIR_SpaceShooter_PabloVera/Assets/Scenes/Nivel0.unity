@@ -606,7 +606,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8732890368468464732, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0, g: 0.24247128, b: 0.5471698, a: 1}
+  m_Color: {r: 0, g: 0.10026947, b: 0.2264151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -677,9 +677,8 @@ MonoBehaviour:
   - {fileID: 1804034031}
   - {fileID: 826845983}
   upgradeMarket: {fileID: 494339559}
-  player: {fileID: 1557950936}
+  player: {fileID: 1536689337}
   start: {fileID: 292162333}
-  startTienda: {fileID: 0}
   musicaBatalla: {fileID: 8300000, guid: 852abf0d67668134da3c7082cca2bbdc, type: 3}
   musicaTienda: {fileID: 8300000, guid: 8ce909ba72477a140a41e156b51a1c67, type: 3}
 --- !u!1 &118045110
@@ -853,7 +852,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6253458348995042749, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.47658145, g: 0, b: 0.5377358, a: 1}
+  m_Color: {r: 0.21842723, g: 0, b: 0.24528301, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -944,7 +943,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6334300658168108586, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0, g: 0.49996293, b: 0.5471698, a: 1}
+  m_Color: {r: 0, g: 0.18827501, b: 0.20754719, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1319,7 +1318,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -6253458348995042749, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.47658145, g: 0, b: 0.5377358, a: 1}
+  m_Color: {r: 0.21842723, g: 0, b: 0.24528301, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1444,6 +1443,30 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2967337402627653064, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9450981
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1538,7 +1561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e44f878eabc364f9bea18439950bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConstruirNave
-  coste: 100
+  coste: 75
   usos: 100
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -6717,7 +6740,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5192749, b: 0, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18679245, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6976,7 +6999,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5566038, g: 0.21827601, b: 0, a: 1}
+  m_Color: {r: 0.21698111, g: 0.085570015, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7163,6 +7186,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2324785295254973526, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.03137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.48235297
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7257,7 +7296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874ad09207f5d87458bb10819b7b67c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraMaxSpeed
-  coste: 50
+  coste: 75
   usos: 4
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -7398,7 +7437,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2324785295254973526, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.19607842, g: 0.5, b: 0, a: 1}
+  m_Color: {r: 0.055277117, g: 0.14150941, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7537,6 +7576,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -8977549894861314016, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.08235294
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7631,7 +7686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a90bf1c867ed61447858c4de992fde8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AumentarHangar
-  coste: 100
+  coste: 150
   usos: 1
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -7730,7 +7785,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8732890368468464732, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0, g: 0.24247128, b: 0.5471698, a: 1}
+  m_Color: {r: 0, g: 0.10026947, b: 0.2264151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8062,6 +8117,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9490196
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.95294124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.95294124
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8156,7 +8231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23123ba0ca8e9df408dc40bf1580217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraAcceleration
-  coste: 50
+  coste: 70
   usos: 5
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -8704,7 +8779,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4222416741655682011, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5377358, g: 0.01054384, b: 0, a: 1}
+  m_Color: {r: 0.3207547, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8939,7 +9014,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2324785295254973526, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.19607842, g: 0.5, b: 0, a: 1}
+  m_Color: {r: 0.055277117, g: 0.14150941, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9529,7 +9604,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5566038, g: 0.21827601, b: 0, a: 1}
+  m_Color: {r: 0.21698111, g: 0.085570015, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9620,7 +9695,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5192749, b: 0, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18679245, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9938,7 +10013,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5192749, b: 0, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18679245, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10208,7 +10283,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 8732890368468464732, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0, g: 0.24247128, b: 0.5471698, a: 1}
+  m_Color: {r: 0, g: 0.10026947, b: 0.2264151, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10802,7 +10877,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5192749, b: 0, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18679245, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10862,7 +10937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8386834737532406377, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: poolSize
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 8522829785865231820, guid: 4310f91da7d5f1e4eaf220761d0f6221, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10929,6 +11004,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 8732890368468464732, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.44313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.48627454
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11023,7 +11118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee36e363aceff747ae3c0fc094625b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraBulletSpeed
-  coste: 50
+  coste: 80
   usos: 3
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -11592,7 +11687,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4222416741655682011, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5372549, g: 0.011764706, b: 0, a: 1}
+  m_Color: {r: 0.3207547, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12135,7 +12230,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5566038, g: 0.21827601, b: 0, a: 1}
+  m_Color: {r: 0.21698111, g: 0.085570015, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12226,7 +12321,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5566038, g: 0.21827601, b: 0, a: 1}
+  m_Color: {r: 0.21698111, g: 0.085570015, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12554,7 +12649,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5566038, g: 0.21827601, b: 0, a: 1}
+  m_Color: {r: 0.21698111, g: 0.085570015, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12775,6 +12870,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6130169659908878332, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.39215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.4156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9333334
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -12869,7 +12984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a66d9c3a40b2004b9f28350f69ed4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraAtkSpeed
-  coste: 50
+  coste: 100
   usos: 5
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -13220,7 +13335,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2324785295254973526, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.19607842, g: 0.5, b: 0, a: 1}
+  m_Color: {r: 0.055277117, g: 0.14150941, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13734,7 +13849,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8977549894861314016, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5283019, g: 0, b: 0.33820155, a: 1}
+  m_Color: {r: 0.20754719, g: 0, b: 0.13221529, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13904,6 +14019,10 @@ PrefabInstance:
     - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_Color.r
       value: 0.9911369
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.003921569
       objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14387,7 +14506,7 @@ MonoBehaviour:
   escenario: {fileID: 2089032312}
   enemyPool: {fileID: 1587715757}
   grid: {fileID: 1767518815}
-  cruceroCollider: {fileID: 684853857}
+  cruceroTransform: {fileID: 684853854}
 --- !u!1001 &1626931995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14408,6 +14527,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6253458348995042749, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.06666667
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -14502,7 +14633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9dca81802f7364f91405bd419f36e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraMultiShoot
-  coste: 100
+  coste: 200
   usos: 2
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -14953,6 +15084,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6334300658168108586, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15085,6 +15236,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1337652905767545761, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -15321,7 +15492,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2324785295254973526, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.19607842, g: 0.5, b: 0, a: 1}
+  m_Color: {r: 0.055277117, g: 0.14150941, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15443,7 +15614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7591539346214233039, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5471698, g: 0.5192749, b: 0, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18679245, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15821,7 +15992,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4222416741655682011, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
-  m_Color: {r: 0.5372549, g: 0.011764706, b: 0, a: 1}
+  m_Color: {r: 0.3207547, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16074,6 +16245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   numRondas: 3
+  initPuntos: 100
   puntosTxt: {fileID: 1050227546}
   messageTxt: {fileID: 620651221}
   uiDerrota: {fileID: 997047596}
@@ -16223,6 +16395,18 @@ PrefabInstance:
     - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.08235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9294118
       objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22510,6 +22694,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4222416741655682011, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.027450982
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -22604,7 +22804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edec7fa409882240897b7a588f3dad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraDMG
-  coste: 75
+  coste: 150
   usos: 3
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
@@ -28588,6 +28788,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -3813308106281854577, guid: 81e0c9f9d2593754a8ddcc9fd095668d, type: 3}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263280184914379369, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.18431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186618219790330581, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8745099
+      objectReference: {fileID: 0}
     - target: {fileID: 8170986799712093681, guid: 974053524f22e0a4ba707f3e44b44c63, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -28682,7 +28898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e155fef3de15fd42a4da5732d34ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepararCrucero
-  coste: 25
+  coste: 50
   usos: 100
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: 02b0e70088ce2e4459ab30d4906c8aa2, type: 3}

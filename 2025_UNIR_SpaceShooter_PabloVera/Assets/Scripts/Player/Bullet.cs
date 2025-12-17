@@ -39,14 +39,14 @@ public class Bullet : MonoBehaviour
 
     public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG)
     {
-        enabled = true;
         initPos = initPosition;
         transform.position = initPos.position;
         transform.SetParent(newParent);
         currentTtl = ttl;
         dir = aim;
-        gameObject.SetActive(true);
         dmg = bulletDMG;
+        gameObject.SetActive(true);
+        enabled = true;
     }
 
     private void FixedUpdate()
@@ -63,8 +63,9 @@ public class Bullet : MonoBehaviour
     {
         gameObject.SetActive(false);
         transform.position = initPos.position;
-        currentTtl = ttl;
+        currentTtl = 0;
         pool.MeterEnLaPool(this);
+        enabled = false;
     }
 
     public virtual void OnTriggerEnter2D(Collider2D collision)

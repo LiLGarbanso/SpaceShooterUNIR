@@ -5,12 +5,12 @@ using UnityEngine.Rendering;
 public class Kamikaze : Enemigo
 {
     public AudioClip SFX_Rush;
-    private Collider2D cruceroEstelar;
+    private Transform cruceroEstelar;
     [SerializeField]private float waitForRush, rushSpeed, f, a;
     //public Vector3 lineRendOffSet;
     private Vector3 movDir;
 
-    public void SetCruceroCollider(Collider2D c) { cruceroEstelar = c; }
+    public void SetCruceroCollider(Transform c) { cruceroEstelar = c; }
 
     private void Start()
     {
@@ -43,15 +43,11 @@ public class Kamikaze : Enemigo
     IEnumerator Rush()
     {
         SoundMannager.Instance.PlaySFX(SFX_Rush);
-        Vector2 cruceroPos = new Vector2(Random.Range(cruceroEstelar.bounds.min.x, cruceroEstelar.bounds.max.x), Random.Range(cruceroEstelar.bounds.min.y, cruceroEstelar.bounds.max.y));
-        //transform.localRotation = Quaternion.Euler(0f, 0f, Vector2.SignedAngle(cruceroPos, -transform.up));
-        //transform.localRotation = Quaternion.AngleAxis(Vector2.SignedAngle(cruceroPos, -transform.up), new Vector3(0,0,1f));
-        //transform.localRotation =  Quaternion.LookRotation(cruceroPos, transform.up);
         yield return new WaitForSeconds(waitForRush);
 
-        while (Vector2.Distance(transform.position, cruceroPos) > 0.1f)
+        while (Vector2.Distance(transform.position, cruceroEstelar.position) > 0.1f)
         {
-            transform.position = Vector2.MoveTowards(transform.position, cruceroPos, enemyData.movementSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, cruceroEstelar.position, enemyData.movementSpeed * Time.deltaTime);
             yield return new WaitForEndOfFrame();
         }
     }
