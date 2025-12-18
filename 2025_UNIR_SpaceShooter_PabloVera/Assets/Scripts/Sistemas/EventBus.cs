@@ -35,9 +35,9 @@ public static class EventBus
     //Con parámetros o sin (puede ser cualquier otra cosa que GameObject)
     //public static event Action OnEvento;
     //public static event Action<parametro> OnEventoParametro;
-    public static event Action OnEmpezarPartida, OnRondaFinalizada, OnGameOver, OnPlayerDead;
-    public static event Action<int> OnNextRound, OnEnemigoMuerto;
-    public static event Action<Mejora> OnEliminarMejoraUnica, OnEliminarMejoraNave, OnEliminarMejoraCrucero;
+    public static event Action OnEmpezarPartida, OnGameOver, OnPlayerDead, OnRondaFinalizada;
+    public static event Action<int> OnEnemigoMuerto;
+    public static event Action<Mejora> OnEliminarMejoraUnica;
 
     //----------Funciones para invocar los eventos----------//
     //Se llama a estas funciones, no a los eventos directamente,
@@ -47,13 +47,9 @@ public static class EventBus
     //public static void LlamarEvento() => OnEvento?.Invoke();
     //public static void LlamarEventoParametro(Parametro param) => OnEvento?.Invoke();
     public static void EmpezarPartida() => OnEmpezarPartida?.Invoke();
-    public static void FinalizarRonda() => OnRondaFinalizada?.Invoke();
     public static void EnemigoMuerto(int score) => OnEnemigoMuerto?.Invoke(score);
     public static void GameOver() => OnGameOver?.Invoke();
+    public static void RondaFinalizada() => OnRondaFinalizada?.Invoke();
     public static void MuerteJugador() => OnPlayerDead?.Invoke();
-    public static void NextRound(int ronda) => OnNextRound?.Invoke(ronda);
     public static void EliminarMejoraUnica(Mejora m) => OnEliminarMejoraUnica?.Invoke(m);
-    public static void EliminarMejoraNave(Mejora m) => OnEliminarMejoraNave?.Invoke(m);
-    public static void EliminarMejoraCrucero(Mejora m) => OnEliminarMejoraCrucero?.Invoke(m);
-
 }

@@ -10,5 +10,5 @@ public class EnemyData : ScriptableObject
     [Header("Stats")]
     public int vida;
     public int dmg, score;
-    public float attackSpeed, startFireDelay, movementSpeed, deploySpeed;
+    public float attackSpeed, bulletSpeed, startFireDelay, movementSpeed, deploySpeed;
 }

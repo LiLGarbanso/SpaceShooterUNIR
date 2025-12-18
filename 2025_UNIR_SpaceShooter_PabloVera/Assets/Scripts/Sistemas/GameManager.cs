@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public int numRondas, initPuntos;
     private int currentRound, currentPuntos;
     public TextMeshProUGUI puntosTxt, messageTxt;
-    public GameObject uiDerrota;
+    public GameObject uiDerrota, escenario;
     private Coroutine crtDerrota;
     public RoundMannager roundMannager;
     public Animator pointsAnimator, messageAnimator;
@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        EventBus.OnRondaFinalizada += RondaFinalizada;
         EventBus.OnGameOver += Derrota;
         EventBus.OnEnemigoMuerto += SumarPuntos;
     }
@@ -73,7 +72,7 @@ public class GameManager : MonoBehaviour
             //rondaTxt.text = "NIVEL COMPLETADO";
             return;
         }
-        EventBus.NextRound(currentRound);
+        //EventBus.NextRound(currentRound);
     }
 
     public void RondaFinalizada()
@@ -87,9 +86,13 @@ public class GameManager : MonoBehaviour
             crtDerrota = StartCoroutine(DerrotaAnim());
     }
 
+    public AudioClip audioMuerte;
     IEnumerator DerrotaAnim()
     {
         uiDerrota.SetActive(true);
+        escenario.SetActive(false);
+        SoundMannager.Instance.PararSonido();
+        SoundMannager.Instance.PlaySFX(audioMuerte);
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("MenuInicial");
         crtDerrota = null;
@@ -106,7 +109,6 @@ public class GameManager : MonoBehaviour
 
     private void OnDisable()
     {
-        EventBus.OnRondaFinalizada -= RondaFinalizada;
         EventBus.OnGameOver -= Derrota;
         EventBus.OnEnemigoMuerto -= SumarPuntos;
     }

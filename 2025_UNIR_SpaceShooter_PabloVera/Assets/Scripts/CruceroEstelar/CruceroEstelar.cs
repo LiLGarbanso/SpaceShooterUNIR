@@ -21,7 +21,7 @@ public class CruceroEstelar : MonoBehaviour
     public Transform respawn;
     public Player jugador;
     public ParticleSystem particulas;
-    public Animator animator;
+    public Animator animator, animatorCrucero;
 
     public int GetCurrentHP() {  return currentHP; }
     public int GetCurrentNaves() { return currentNaves; }
@@ -44,17 +44,26 @@ public class CruceroEstelar : MonoBehaviour
     private void OnEnable()
     {
         EventBus.OnPlayerDead += Respawnear;
+        EventBus.OnRondaFinalizada += ActivarPEM;
     }
 
     private void OnDisable()
     {
         EventBus.OnPlayerDead -= Respawnear;
+        EventBus.OnRondaFinalizada -= ActivarPEM;
+    }
+
+    public void ActivarPEM()
+    {
+        SoundMannager.Instance.PlaySFX(cruceroData.SFX_PEM);
+        animatorCrucero.SetTrigger("pem");
     }
 
     public void Respawnear()
     {
         currentNaves--;
         UpdateNavesUI();
+        ActivarPEM();
         if (currentNaves <= 0)
         {
             EventBus.GameOver();

@@ -10,7 +10,7 @@ public abstract class Mejora : MonoBehaviour
     public int usos;
     private int currentUsos;
     public GameManager gm;
-    public AudioClip sfxMejora;
+    public AudioClip sfxMejora, sfxNoMoney;
     public string mensajeRequisitos;
     public TextMeshPro txtPrecio;
     public ParticleSystem pSys;
@@ -57,7 +57,9 @@ public abstract class Mejora : MonoBehaviour
         }
         else
         {
-            //SFX no se puede comprar
+            gm.RestarPuntos(0);
+            gm.MostrarMensaje("Dinero Insuficiente");
+            SoundMannager.Instance.PlaySFX(sfxNoMoney);
         }
     }
 

@@ -24,5 +24,6 @@ MonoBehaviour:
   acceleration: 2000
   speedDrag: 0.95
   shootCadency: 0.7
+  baseBulletSpeed: 15
   shieldTime: 1
   shieldCooldown: 3

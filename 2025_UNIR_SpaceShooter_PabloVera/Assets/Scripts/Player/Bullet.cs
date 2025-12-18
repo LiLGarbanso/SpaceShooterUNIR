@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] protected float ttl, baseSpeed;
+    [SerializeField] protected float ttl;
     protected int dmg;
     protected Vector2 dir;
     protected float currentTtl;
@@ -22,24 +22,15 @@ public class Bullet : MonoBehaviour
     }
     public void SetBulletPool(BulletPool Bpool) { pool = Bpool; }
 
-    public void IncreaseSpeed(float increment)
-    {
-        speed = Mathf.Clamp(speed+increment, 0, baseSpeed + increment*5);
-    }
-
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
-    {
-        speed = baseSpeed;
-    }
-
-    public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG)
+    public void Init(Vector2 aim, Transform initPosition, Transform newParent, int bulletDMG, float bulletSpeed)
     {
         initPos = initPosition;
+        speed = bulletSpeed;
         transform.position = initPos.position;
         transform.SetParent(newParent);
         currentTtl = ttl;

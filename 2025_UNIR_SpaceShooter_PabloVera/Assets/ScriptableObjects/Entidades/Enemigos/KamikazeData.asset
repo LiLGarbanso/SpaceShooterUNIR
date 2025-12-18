@@ -18,7 +18,7 @@ MonoBehaviour:
   vida: 1
   dmg: 4
   score: 10
-  attackSpeed: 1
+  attackSpeed: 2
   startFireDelay: 3
   movementSpeed: 10
   deploySpeed: 10

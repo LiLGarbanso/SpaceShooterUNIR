@@ -9,15 +9,16 @@ public class PlayerActions : MonoBehaviour
     public PlayerData playerData;
     private Player playerScript;
     private bool canShoot, activeShield, canShield, canDobleShoot, canTripleShoot;
-    private float currentShootCadency, currentShieldTime, atckSpeed;
+    private float currentShootCadency, currentShieldTime, atckSpeed, currentBulletSpeed;
     private Coroutine coroutineEscudo;
-    private int extraDMG, timesDmgUpgrade, timesAtkSpeedUpgrade, timesBulletSpeedUpgrade;
+    private int extraDMG, extraSpeed, timesDmgUpgrade, timesAtkSpeedUpgrade, timesBulletSpeedUpgrade;
 
     private void Start()
     {
         playerScript = gameObject.GetComponent<Player>();
         canShoot = true;
         currentShootCadency = 0;
+        currentBulletSpeed = playerData.baseBulletSpeed;
         extraDMG = 0;
         activeShield = false;
         currentShieldTime = playerData.shieldTime;
@@ -49,7 +50,7 @@ public class PlayerActions : MonoBehaviour
     public void IncreaseBulletSpeed( float increment)
     {
         timesBulletSpeedUpgrade++;
-        poolProyectiles.UpgradeBulletSpeed(increment);
+        currentBulletSpeed += increment;
     }
     public int GetTimesIncreasedBulletSpeed() { return timesBulletSpeedUpgrade; }
 
@@ -86,9 +87,9 @@ public class PlayerActions : MonoBehaviour
                 b1.gameObject.transform.SetParent(escenario);
                 b2.gameObject.transform.SetParent(escenario);
                 b3.gameObject.transform.SetParent(escenario);
-                b1.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG);
-                b2.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG);
-                b3.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG);
+                b1.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
+                b2.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
+                b3.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
             }
             else if(canDobleShoot)
             {
@@ -96,14 +97,14 @@ public class PlayerActions : MonoBehaviour
                 Bullet b2 = poolProyectiles.SacarDeLaPool();
                 b1.gameObject.transform.SetParent(escenario);
                 b2.gameObject.transform.SetParent(escenario);
-                b1.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG);
-                b2.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG);
+                b1.Init(cannon2.up, cannon2, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
+                b2.Init(cannon3.up, cannon3, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
             }
             else
             {
                 Bullet bull = poolProyectiles.SacarDeLaPool();
                 bull.gameObject.transform.SetParent(escenario);
-                bull.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG);
+                bull.Init(cannon.up, cannon, escenario, playerData.dmg + extraDMG, currentBulletSpeed);
             }
             SoundMannager.Instance.PlaySFX(playerData.SFX_disparo);
         }

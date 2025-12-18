@@ -19,16 +19,6 @@ public class BulletPool : MonoBehaviour
         }
     }
 
-    //---------MEJORAS--------------------------------//
-    public void UpgradeBulletSpeed(float increment)
-    {
-        foreach(Bullet bullet in pool)
-        {
-            bullet.IncreaseSpeed(increment);
-        }
-    }
-    //-----------------------------------------------//
-
     public Bullet SacarDeLaPool()
     {
         Bullet bull = pool?.Dequeue();

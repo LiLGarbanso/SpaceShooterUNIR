@@ -10,5 +10,5 @@ public class PlayerData : ScriptableObject
     [Header("Stats")]
     public int vida;
     public int dmg;
-    public float maxSpeed, acceleration, speedDrag, shootCadency, shieldTime, shieldCooldown;
+    public float maxSpeed, acceleration, speedDrag, shootCadency, baseBulletSpeed, shieldTime, shieldCooldown;
 }

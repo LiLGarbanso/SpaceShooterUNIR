@@ -53,11 +53,11 @@ public class Dasher : Enemigo
         lineRenderer.enabled = false;
         yield return new WaitForSeconds(waitTime);
         Bullet b1 = bulletPool.SacarDeLaPool();
-        b1.Init(Vector2.down, cannon, escenario, enemyData.dmg);
+        b1.Init(Vector2.down, cannon, escenario, enemyData.dmg, enemyData.bulletSpeed);
         SoundMannager.Instance.PlaySFX(enemyData.SFX_disparo);
         yield return new WaitForSeconds(fireDelay);
         Bullet b2 = bulletPool.SacarDeLaPool();
-        b2.Init(Vector2.down, cannon, escenario, enemyData.dmg);
+        b2.Init(Vector2.down, cannon, escenario, enemyData.dmg, enemyData.bulletSpeed);
         SoundMannager.Instance.PlaySFX(enemyData.SFX_disparo);
         canShoot = true;
         currentDashes = dashes;

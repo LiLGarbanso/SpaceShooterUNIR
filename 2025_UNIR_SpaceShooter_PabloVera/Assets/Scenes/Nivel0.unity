@@ -679,8 +679,13 @@ MonoBehaviour:
   upgradeMarket: {fileID: 494339559}
   player: {fileID: 1536689337}
   start: {fileID: 292162333}
-  musicaBatalla: {fileID: 8300000, guid: 852abf0d67668134da3c7082cca2bbdc, type: 3}
   musicaTienda: {fileID: 8300000, guid: 8ce909ba72477a140a41e156b51a1c67, type: 3}
+  finRonda: {fileID: 8300000, guid: fa496b1e0a6d7bf448023bf17db5abde, type: 3}
+  temazos:
+  - {fileID: 8300000, guid: 960989264b2075a4dab238f0da94093d, type: 3}
+  - {fileID: 8300000, guid: dec90590161c4a74daabdda8051941a9, type: 3}
+  - {fileID: 8300000, guid: 65ea76343e33a24479b5ee7d3f3c3eec, type: 3}
+  - {fileID: 8300000, guid: 852abf0d67668134da3c7082cca2bbdc, type: 3}
   escenaVictoria: Victoria2
 --- !u!1 &118045110
 GameObject:
@@ -1064,7 +1069,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1562,10 +1567,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9e44f878eabc364f9bea18439950bdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConstruirNave
-  coste: 75
+  coste: 50
   usos: 100
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max naves
   txtPrecio: {fileID: 255011894}
   pSys: {fileID: 255011892}
@@ -7297,10 +7303,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874ad09207f5d87458bb10819b7b67c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraMaxSpeed
-  coste: 75
+  coste: 50
   usos: 4
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max velocidad
   txtPrecio: {fileID: 407987802}
   pSys: {fileID: 407987800}
@@ -7687,10 +7694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a90bf1c867ed61447858c4de992fde8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AumentarHangar
-  coste: 150
+  coste: 100
   usos: 1
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Ya se ha mejorado el hangar
   txtPrecio: {fileID: 440420455}
   pSys: {fileID: 440420453}
@@ -8232,10 +8240,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23123ba0ca8e9df408dc40bf1580217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraAcceleration
-  coste: 70
+  coste: 50
   usos: 5
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max aceleracion
   txtPrecio: {fileID: 483260818}
   pSys: {fileID: 483260816}
@@ -8899,6 +8908,7 @@ Transform:
   - {fileID: 2087502803}
   - {fileID: 104491353}
   - {fileID: 494339558}
+  - {fileID: 912593469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559287069
@@ -9808,6 +9818,7 @@ Transform:
   - {fileID: 1781284616}
   - {fileID: 304419365}
   - {fileID: 1426303737}
+  - {fileID: 841569812}
   m_Father: {fileID: 2089032312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &684853856
@@ -9838,6 +9849,7 @@ MonoBehaviour:
   jugador: {fileID: 1653893233}
   particulas: {fileID: 304419367}
   animator: {fileID: 1426303739}
+  animatorCrucero: {fileID: 684853859}
 --- !u!61 &684853857
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11119,10 +11131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee36e363aceff747ae3c0fc094625b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraBulletSpeed
-  coste: 80
+  coste: 40
   usos: 3
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max bullet speed
   txtPrecio: {fileID: 815292320}
   pSys: {fileID: 815292318}
@@ -11216,6 +11229,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826845983}
   m_CullTransparentMesh: 1
+--- !u!1 &841569811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841569812}
+  - component: {fileID: 841569813}
+  m_Layer: 0
+  m_Name: PEM
+  m_TagString: tope
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841569812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841569811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0696, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 684853854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &841569813
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841569811}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.02
 --- !u!1 &861324876
 GameObject:
   m_ObjectHideFlags: 0
@@ -11575,15 +11656,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912593468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.73048, y: 10.8292, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 153603179}
   - {fileID: 1358072289}
   - {fileID: 1542118672}
-  m_Father: {fileID: 1659613889}
+  m_Father: {fileID: 536796305}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &912593470
 MonoBehaviour:
@@ -11600,9 +11681,9 @@ MonoBehaviour:
   musicSource: {fileID: 153603180}
   sfxSource: {fileID: 1358072290}
   ambienceSource: {fileID: 1542118673}
-  musicVolume: 0.8
+  musicVolume: 0.5
   sfxVolume: 1
-  ambienceVolume: 1
+  ambienceVolume: 0.5
   pitchRandomness: 0.1
   musicaAmbiente: {fileID: 0}
   musicaVictoria: {fileID: 0}
@@ -12985,10 +13066,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a66d9c3a40b2004b9f28350f69ed4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraAtkSpeed
-  coste: 100
+  coste: 50
   usos: 5
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max attack speed
   txtPrecio: {fileID: 1131073932}
   pSys: {fileID: 1131073930}
@@ -14148,7 +14230,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.584
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14634,10 +14716,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a9dca81802f7364f91405bd419f36e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraMultiShoot
-  coste: 200
+  coste: 100
   usos: 2
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: max multishot
   txtPrecio: {fileID: 1626931999}
   pSys: {fileID: 1626931997}
@@ -14754,38 +14837,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99b6390ec1df15142b29a8e2f2eca711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
---- !u!1 &1659613888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1659613889}
-  m_Layer: 0
-  m_Name: SISTEMAS
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1659613889
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659613888}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 912593469}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1669416792
 GameObject:
   m_ObjectHideFlags: 0
@@ -15199,10 +15250,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7edbbcf3a912cd4a84004985232d827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraShield
-  coste: 100
+  coste: 75
   usos: 1
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Ya se ha instalado el escudo
   txtPrecio: {fileID: 1757026774}
   pSys: {fileID: 1757026772}
@@ -15351,10 +15403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f94c5b74e906c4eaa4f7e81bba897c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivarBarreras
-  coste: 75
+  coste: 50
   usos: 100
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: 
   txtPrecio: {fileID: 1758895710}
   pSys: {fileID: 1758895708}
@@ -16250,10 +16303,12 @@ MonoBehaviour:
   puntosTxt: {fileID: 1050227546}
   messageTxt: {fileID: 620651221}
   uiDerrota: {fileID: 997047596}
+  escenario: {fileID: 2089032311}
   roundMannager: {fileID: 104491354}
   pointsAnimator: {fileID: 1050227545}
   messageAnimator: {fileID: 620651220}
   ttlMessage: 6
+  audioMuerte: {fileID: 8300000, guid: 3ee6e146768da1949baff6d969cfba96, type: 3}
 --- !u!4 &1877027545
 Transform:
   m_ObjectHideFlags: 0
@@ -16516,6 +16571,7 @@ MonoBehaviour:
   usos: 1000
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: 
   txtPrecio: {fileID: 1887274280}
   pSys: {fileID: 1887274278}
@@ -21712,6 +21768,7 @@ MonoBehaviour:
   usos: 1000
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: 
   txtPrecio: {fileID: 1294549160}
   pSys: {fileID: 249059776}
@@ -21830,7 +21887,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.2505026, y: -7.992825}
+  m_Offset: {x: 0.29475117, y: -7.992825}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -21840,7 +21897,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 27.860598, y: 2.0460577}
+  m_Size: {x: 24.055223, y: 2.0460577}
   m_EdgeRadius: 0
 --- !u!1 &1960855567
 GameObject:
@@ -22805,10 +22862,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edec7fa409882240897b7a588f3dad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MejoraDMG
-  coste: 150
+  coste: 100
   usos: 3
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: d5869bdf9bb6acb4fa009279ee894310, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: Max DMG
   txtPrecio: {fileID: 2066101442}
   pSys: {fileID: 2066101440}
@@ -28899,10 +28957,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e155fef3de15fd42a4da5732d34ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RepararCrucero
-  coste: 50
+  coste: 25
   usos: 100
   gm: {fileID: 1877027544}
   sfxMejora: {fileID: 8300000, guid: 02b0e70088ce2e4459ab30d4906c8aa2, type: 3}
+  sfxNoMoney: {fileID: 8300000, guid: 8f7e913d29016b142a7b8e74a6d6f82d, type: 3}
   mensajeRequisitos: max hp crucero
   txtPrecio: {fileID: 7311812633764362611}
   pSys: {fileID: 7311812633764362609}
@@ -28927,6 +28986,5 @@ SceneRoots:
   - {fileID: 1140495329}
   - {fileID: 536796305}
   - {fileID: 625575143}
-  - {fileID: 1659613889}
   - {fileID: 367962799}
   - {fileID: 55548682}

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Ronda2
   m_EditorClassIdentifier: Assembly-CSharp::RoundData
   numDummies: 10
-  numSnipper: 4
+  numSnipper: 0
   numDashers: 6
-  numKamimazes: 10
+  numKamimazes: 4
   dummyRatio: 0.5
-  snipperRatio: 1
-  dasherRatio: 3
-  kamikazeRatio: 1
+  snipperRatio: 0
+  dasherRatio: 2
+  kamikazeRatio: 2
   dummySpawnDelay: 0
-  snipperSpawnDelay: 5
-  dasherSpawnDelay: 10
-  kamikazeSpawnDelay: 5
+  snipperSpawnDelay: 0
+  dasherSpawnDelay: 5
+  kamikazeSpawnDelay: 10

@@ -14,7 +14,8 @@ public class RoundMannager : MonoBehaviour
     public PoolMejoras upgradeMarket;
     public PlayerMovement player;
     public Transform start;
-    public AudioClip musicaBatalla, musicaTienda;
+    public AudioClip musicaTienda, finRonda;
+    public List<AudioClip> temazos;
     public string escenaVictoria;
 
     private void OnEnable()
@@ -34,14 +35,16 @@ public class RoundMannager : MonoBehaviour
 
     public void StartRound()
     {
-        SoundMannager.Instance.PlayMusic(musicaBatalla);
+        
         currentRonda++;
+        
         if (currentRonda >= maxRounds)
         {
             RondaFinal();
         }
         else
         {
+            SoundMannager.Instance.PlayMusic(temazos[currentRonda]);
             currentEnemies = 0;
             potentialCurrentEnemies = CalcularTotalEnemigos();
             roundIMGs[currentRonda].SetActive(true);
@@ -115,7 +118,8 @@ public class RoundMannager : MonoBehaviour
     {
         player.SetMovement(false);
         SoundMannager.Instance.PararSonido();
-        SoundMannager.Instance.PararSonido();
+        SoundMannager.Instance.PlaySFX(finRonda);
+        EventBus.RondaFinalizada();
         while (Vector2.Distance(start.position, player.gameObject.transform.position) > 0.1)
         {
             player.gameObject.transform.position = Vector2.MoveTowards(player.gameObject.transform.position, start.position, 0.1f);
