@@ -37,29 +37,32 @@ public abstract class Mejora : MonoBehaviour
 
     public void TrySeleccionarMejora()
     {
-        if (active && gm.GetPuntosJugador() >= coste)
+        if (active)
         {
-            if (RequisitosMejora() && currentUsos < usos)
+            if (gm.GetPuntosJugador() >= coste)
             {
-                gm.RestarPuntos(coste);
-                SoundMannager.Instance.PlaySFX(sfxMejora);
-                AplicarMejora();
-                currentUsos++;
-                active = false;
-                if(hasIcon)
-                    imgs[currentUsos-1].SetActive(true);
-                StartCoroutine(AnimCompra());
+                if (RequisitosMejora() && currentUsos < usos)
+                {
+                    active = false;
+                    gm.RestarPuntos(coste);
+                    SoundMannager.Instance.PlaySFX(sfxMejora);
+                    AplicarMejora();
+                    currentUsos++;
+                    if (hasIcon)
+                        imgs[currentUsos - 1].SetActive(true);
+                    StartCoroutine(AnimCompra());
+                }
+                else
+                {
+                    gm.MostrarMensaje(mensajeRequisitos);
+                }
             }
             else
             {
-                gm.MostrarMensaje(mensajeRequisitos);
+                gm.RestarPuntos(0);
+                gm.MostrarMensaje("Dinero Insuficiente");
+                SoundMannager.Instance.PlaySFX(sfxNoMoney);
             }
-        }
-        else
-        {
-            gm.RestarPuntos(0);
-            gm.MostrarMensaje("Dinero Insuficiente");
-            SoundMannager.Instance.PlaySFX(sfxNoMoney);
         }
     }
 

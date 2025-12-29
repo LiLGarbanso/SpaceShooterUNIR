@@ -276,7 +276,7 @@ MonoBehaviour:
     m_Bits: 64
   player: {fileID: 0}
   lineRenderer: {fileID: 6922828810301963825}
-  aimTime: 2
+  aimTime: 1
 --- !u!4 &2381974165193904926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2603121467397961789, guid: 9018af6d2a98ce74a9b3325c1916eabb, type: 3}

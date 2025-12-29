@@ -17,8 +17,9 @@ MonoBehaviour:
   SFX_muerte: {fileID: 8300000, guid: 2d27b1bb6ec95fc45ad1b78c04ba85f2, type: 3}
   vida: 1
   dmg: 4
-  score: 10
+  score: 12
   attackSpeed: 2
+  bulletSpeed: 0
   startFireDelay: 3
   movementSpeed: 10
   deploySpeed: 10

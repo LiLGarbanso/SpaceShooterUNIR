@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\sistemas\\roundmannager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sistemas\\roundmannager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\mejoras\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\mejoras\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\mejoras\\mejorabulletspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\assets\\scripts\\mejoras\\mejorabulletspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mejoras\\mejorabulletspeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|c:\\furious monkeys\\proyectos\\spaceshooterunir\\2025_unir_spaceshooter_pablovera\\assets\\scripts\\sistemas\\roundmannager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5EA01C2-FF23-1924-4333-679F43908BCB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sistemas\\roundmannager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 220,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "RoundMannager.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Sistemas\\RoundMannager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sistemas\\RoundMannager.cs",
               "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Sistemas\\RoundMannager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sistemas\\RoundMannager.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAIA1wC4AAABEAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAIBZwC4AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T19:50:39.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MejoraBulletSpeed.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\MejoraBulletSpeed.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\MejoraBulletSpeed.cs",
@@ -52,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Mejora.cs",
               "DocumentMoniker": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\Mejora.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Mejoras\\Mejora.cs",
               "ToolTip": "C:\\Furious Monkeys\\Proyectos\\SpaceShooterUNIR\\2025_UNIR_SpaceShooter_PabloVera\\Assets\\Scripts\\Mejoras\\Mejora.cs",
               "RelativeToolTip": "Assets\\Scripts\\Mejoras\\Mejora.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAIAxwCkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T19:38:12.758Z",
               "EditorCaption": ""
